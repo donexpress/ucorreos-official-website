@@ -95,6 +95,33 @@
                         <div class="section-tittle section-tittle3">
                             <h2>Cotizador</h2>
                             <p>Calcula el valor de tu compra.</p>
+
+                            <div class="row">
+                                <div class="contact-form-wrapper" style="border-color: #175898;">
+                                    <form action="#" class="contact-form">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="input-form">
+                                                    <label>Costo del transporte:</label>
+                                                    <input id="shipment_cost" disabled type="text" placeholder="0">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="input-form">
+                                                    <label>Impuestos, Derechos y Otros:</label>
+                                                    <input id="fixed_cost" disabled type="text" placeholder="0">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="input-form">
+                                                    <label>Total estimado (CNY):</label>
+                                                    <input id="total_ammount" disabled type="text" placeholder="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,8 +129,26 @@
                 <div class="col-xl-8 col-xxl-7 col-lg-7">
                     <div class="contact-form-wrapper" style="border-color: #175898;">
                         <!-- form -->
-                        <form action="#" class="contact-form">
-                            <div class="row ">
+                        <form onsubmit="return onSubmit()" action="#" class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="input-form">
+                                        <label>Método de envío</label>
+                                        <select id="shipment_type">
+                                            <option value="aerial">Aéreo</option>
+                                            <option value="maritime">Marítimo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="input-form">
+                                        <label>Tipo de envío</label>
+                                        <select id="cargo_type">
+                                            <option value="normal">Normal</option>
+                                            <option value="special">Especial</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="input-form">
                                         <label>Valor del producto en usd (Miami):</label>
@@ -113,7 +158,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <div class="input-form">
                                         <label>Peso(Kg):</label>
-                                        <input placeholder="0" type="text">
+                                        <input id="weight" placeholder="0" type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -149,18 +194,6 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="input-form">
                                         <input placeholder="Largo" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <label>Peso Volumetrico Kgs:</label>
-                                        <input type="text" value="0" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <label>Peso Efectivo Kgs</label>
-                                        <input type="text" value="0" disabled>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -396,5 +429,29 @@
 <!--  Plugins, main-Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+
+<script>
+    function onSubmit() {
+        const shipment_type = document.getElementById('shipment_type').value;
+        const cargo_type = document.getElementById('cargo_type').value;
+        const weight = document.getElementById('weight').value;
+        let firstKilo = 0;
+        const rest = shipment_type === 'aerial' ? 60 : 9;
+        const workWeight = Number.isInteger(Number(weight)) ? weight: Math.floor(Number(weight)) + 1 
+        if(cargo_type === 'normal') {
+            firstKilo = shipment_type === 'aerial' ? 88 : 49;
+        } else {
+            firstKilo = shipment_type === 'aerial' ? 95 : 68;
+        }
+        const shipment_cost = firstKilo + (rest * (workWeight - 1))
+        const fixed_cost = 3
+        const total = fixed_cost + shipment_cost;
+        document.getElementById('shipment_cost').value = shipment_cost; 
+        document.getElementById('fixed_cost').value = fixed_cost; 
+        document.getElementById('total_ammount').value = total; 
+        console.log({shipment_cost, fixed_cost})
+        return false;
+    }
+</script>
 </body>
 </html>
