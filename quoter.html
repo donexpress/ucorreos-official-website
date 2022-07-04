@@ -108,14 +108,14 @@
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12">
                                                 <div class="input-form">
-                                                    <label>Impuestos, Derechos y Otros:</label>
-                                                    <input id="fixed_cost" disabled type="text" placeholder="0">
+                                                    <label>Costo fijo consolidacion, etiquetado y empaque:</label>
+                                                    <input id="total_fixed_cost" disabled type="text" placeholder="0">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12">
                                                 <div class="input-form">
                                                     <label>Total estimado (CNY):</label>
-                                                    <input id="total_ammount" disabled type="text" placeholder="0">
+                                                    <input id="total_amount" disabled type="text" placeholder="0">
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="input-form">
-                                        <label>Tipo de envío</label>
+                                        <label>Tipo de producto</label>
                                         <select id="cargo_type">
                                             <option value="normal">Normal</option>
                                             <option value="special">Especial</option>
@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="input-form">
-                                        <label>Valor del producto en usd (Miami):</label>
+                                        <label>Valor del producto en pesos USD:</label>
                                         <input type="text" placeholder="0">
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
 
                                 <div class="col-lg-8 col-md-8 col-sm-8 ">
                                     <div class="input-form">
-                                        <label>Dimenciones</label>
+                                        <label>Dimensiones</label>
                                         <input placeholder="Alto" type="text">
                                     </div>
                                 </div>
@@ -196,22 +196,22 @@
                                         <input placeholder="Largo" type="text">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <label>Region:</label>
-                                        <select>
-                                            <option>XIII - Metropolitana de santiago</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <label>Productos:</label>
-                                        <select>
-                                            <option>Productos Generales</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <!-- <div class="col-lg-6 col-md-6 col-sm-6"> -->
+                                <!--     <div class="input-form"> -->
+                                <!--         <label>Region:</label> -->
+                                <!--         <select> -->
+                                <!--             <option>XIII - Metropolitana de santiago</option> -->
+                                <!--         </select> -->
+                                <!--     </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="col-lg-6 col-md-6 col-sm-6"> -->
+                                <!--     <div class="input-form"> -->
+                                <!--         <label>Productos:</label> -->
+                                <!--         <select> -->
+                                <!--             <option>Productos Generales</option> -->
+                                <!--         </select> -->
+                                <!--     </div> -->
+                                <!-- </div> -->
                                 
                                 <!-- Button -->
                                 <div class="col-lg-12">
@@ -444,12 +444,14 @@
             firstKilo = shipment_type === 'aerial' ? 95 : 68;
         }
         const shipment_cost = firstKilo + (rest * (workWeight - 1))
-        const fixed_cost = 3
-        const total = fixed_cost + shipment_cost;
+        const packaging_cost = 6.8;
+        const order_fixed_cost = 3;
+        const total_fixed_cost = packaging_cost + order_fixed_cost;
+        const total = total_fixed_cost + shipment_cost;
         document.getElementById('shipment_cost').value = shipment_cost; 
-        document.getElementById('fixed_cost').value = fixed_cost; 
-        document.getElementById('total_ammount').value = total; 
-        console.log({shipment_cost, fixed_cost})
+        document.getElementById('total_fixed_cost').value = total_fixed_cost; 
+        document.getElementById('total_amount').value = total; 
+        console.log({shipment_cost, total_fixed_cost})
         return false;
     }
 </script>
