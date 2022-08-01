@@ -28,6 +28,24 @@
         height: 50px !important;
         padding: 3px 19px 11px 31px !important;
       }
+      .tracking_container input[type="text"] {
+        width: 200px;
+        height: 30px;
+        padding-right: 50px;
+        border-radius: 10px;
+        padding-left: 10px;
+        outline: none;
+        border: 1px solid #dedede;
+      }
+      .tracking_container button {
+        margin-left: -50px;
+        height: 30px;
+        width: 50px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
@@ -115,12 +133,16 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                   </div>
-                  <a
-                    href="#"
-                    class="btn header-btn2 ml-5"
-                    style="background-color: #00a9e7"
-                    >Get Free Quote</a
-                  >
+                  <div class="tracking_container">
+                    <input
+                      id="tracking_code"
+                      type="text"
+                      placeholder="Tracking"
+                    />
+                    <button onclick="search()">
+                      <img src="./assets/img/icon/search.svg" />
+                    </button>
+                  </div>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -589,6 +611,13 @@
         // console.log({ shipment_cost, fixed_cost });
         alert("Gracias, le contactaremos")
         return false;
+      }
+      function search() {
+        const code = document.getElementById("tracking_code").value;
+        if (code) {
+          const url = `https://www.31track.com/results?tn[]=${code}`;
+          window.open(url, "_blank").focus();
+        }
       }
     </script>
   </body>
