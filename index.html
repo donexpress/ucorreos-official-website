@@ -1,606 +1,1171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Logistic HTML-5 Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icon/favicon.png"
+    />
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .nice-select {
+        height: 50px !important;
+        padding: 3px 19px 11px 31px !important;
+      }
+
+      .tracking_container input[type="text"] {
+        width: 200px;
+        height: 30px;
+        padding-right: 50px;
+        border-radius: 10px;
+        padding-left: 10px;
+        outline: none;
+        border: 1px solid #dedede;
+      }
+      .tracking_container button {
+        margin-left: -50px;
+        height: 30px;
+        width: 50px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+      }
+      .section_header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section_header .section_spacer {
+        height: 1px;
+        background-color: #dedede;
+        width: 100%;
+      }
+      .section_header .section_text {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 332px;
+        display: flex;
+        font-size: 40px;
+        justify-content: space-between;
+      }
+      .section_header .section_text .accent {
+        background-color: #175898;
+        margin-right: 50px;
+        color: #ffffff;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .logos_row {
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div class="header-area">
-            <div class="main-header header-sticky">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="menu-wrapper align-items-center justify-content-between">
-                            <div class="header-left d-flex align-items-center">
-                                <!-- Logo -->
-                                <div class="logo" style="width: 177px; height: 140px; background: linear-gradient(4deg, rgba(23,88,152,1) 14%, rgba(0,169,231,1) 100%); display: flex; align-items: center; justify-content: center;">
-                                    <a href="index.html"><img src="assets/img/logo/logo_image.png" width="160px" alt=""></a>
-                                </div>
-                                <!-- Logo-2 -->
-                                <div class="logo2">
-                                    <div style="width: 112px; height: 80px; background: linear-gradient(4deg, rgba(23,88,152,1) 14%, rgba(0,169,231,1) 100%); display: flex; align-items: center; justify-content: center;">
-                                        <a href="index.html"><img src="assets/img/logo/logo_image.png" width="100px" alt=""></a>
-                                    </div>
-                                </div>
-                                <!-- Main-menu -->
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">La Empresa</a></li> 
-                                            <li><a href="services.html">Servicio</a></li>
-                                            <li><a href="about.html">Alianzas</a></li>
-                                            <li><a href="about.html">Tecnologías</a></li>
-                                            <!-- <li><a href="blog.html">Blog</a>
+      <div class="header-area">
+        <div class="main-header header-sticky">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="menu-wrapper align-items-center justify-content-between"
+              >
+                <div class="header-left d-flex align-items-center">
+                  <!-- Logo -->
+                  <div
+                    class="logo"
+                    style="
+                      width: 177px;
+                      height: 140px;
+                      background: linear-gradient(
+                        4deg,
+                        rgba(23, 88, 152, 1) 14%,
+                        rgba(0, 169, 231, 1) 100%
+                      );
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <a href="index.html"
+                      ><img
+                        src="assets/img/logo/logo_image.png"
+                        width="160px"
+                        alt=""
+                    /></a>
+                  </div>
+                  <!-- Logo-2 -->
+                  <div class="logo2">
+                    <div
+                      style="
+                        width: 112px;
+                        height: 80px;
+                        background: linear-gradient(
+                          4deg,
+                          rgba(23, 88, 152, 1) 14%,
+                          rgba(0, 169, 231, 1) 100%
+                        );
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <a href="index.html"
+                        ><img
+                          src="assets/img/logo/logo_image.png"
+                          width="100px"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <!-- Main-menu -->
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#services">Servicio</a></li>
+                        <li><a href="#aliance">Alianzas</a></li>
+                        <li><a href="#technologies">Tecnologías</a></li>
+                        <!-- <li><a href="blog.html">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="blog_details.html">Blog Details</a></li>
                                                     <li><a href="elements.html">Elements</a></li>
                                                 </ul>
                                             </li> -->
-                                            <li><a href="contact.html">Consolidación</a></li>
-                                            <li><a href="quoter.html">Cotizador</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>   
-                            </div>
-                            <div class="header-right1 d-flex align-items-center">
-                                <!-- social -->
-                                <div class="header-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <a href="#" class="btn header-btn2 ml-5" style="background-color: #00a9e7;">Obtenga cuota gratis</a>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
+                        <li><a href="contact.html">Consolidación</a></li>
+                        <li><a href="#quoter">Cotizador</a></li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
+                <div class="header-right1 d-flex align-items-center">
+                  <!-- social -->
+                  <div class="header-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <div class="tracking_container">
+                    <input
+                      id="tracking_code"
+                      type="text"
+                      placeholder="Tracking"
+                    />
+                    <button onclick="search()">
+                      <img src="./assets/img/icon/search.svg" />
+                    </button>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <!-- slider Area Start-->
-        <div class="slider-area">
-            <div class="slider-active">
-                <!-- Slider 01 -->
-                <div class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg1">
-                    <div class="container">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-left" style="background: linear-gradient(4deg, rgba(23,88,152,1) 34%, rgba(0,169,231,1) 100%);">
-                                    <h1 data-animation="bounceIn" data-delay=".4s" >Infórmese del estado de nuestros servicios.</h1>
-                                    <!-- Hero-btn -->
-                                    <div class="hero__btn" data-animation="fadeInUp" data-delay=".7s">
-                                        <a href="services.html" class="border-btn hero-btn">Nuestros servicios</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-right">
-                                    <img class="icon" src="assets/img/icon/Subtraction.svg" alt="">
-                                    <h2 data-animation="fadeInUp" data-delay=".3s">Brindamos Soluciones alternativas de Cross boarder E commerce, Material impreso, publicaciones y marketing directo
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider 02 -->
-                <div class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg2">
-                    <div class="container">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-left" style="background: linear-gradient(4deg, rgba(23,88,152,1) 34%, rgba(0,169,231,1) 100%);">
-                                    <h1 data-animation="bounceIn" data-delay=".4s" >Encuentra la paz interior en el servicio profesional</h1>
-                                    <!-- Hero-btn -->
-                                    <div class="hero__btn" data-animation="fadeInUp" data-delay=".7s">
-                                        <a href="https://www.31track.com/" target="_blank" class="border-btn hero-btn">Haga clic para referencia</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-right">
-                                    <img class="icon" src="assets/img/icon/Subtraction.svg" alt="">
-                                    <h2 data-animation="fadeInUp" data-delay=".3s">Las soluciones de rastreo de Ucorreos muestran el progreso de su envío en cada paso del camino, a través de la ciudad o alrededor del continente</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider 03 -->
-                <div class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg3">
-                    <div class="container">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-left" style="background: linear-gradient(4deg, rgba(23,88,152,1) 34%, rgba(0,169,231,1) 100%);">
-                                    <h1 data-animation="bounceIn" data-delay=".4s" >Vamos a donde quieras llegar</h1>
-                                    <!-- Hero-btn -->
-                                    <div class="hero__btn" data-animation="fadeInUp" data-delay=".7s">
-                                        <a href="#services" class="border-btn hero-btn">Haga clic para referencia</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
-                                <div class="hero-caption-right">
-                                    <img class="icon" src="assets/img/icon/Subtraction.svg" alt="">
-                                    <h2 data-animation="fadeInUp" data-delay=".3s">Brindamos Soluciones alternativas de Cross boarder E commerce, Consolidación y Transporte internacional
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slider Area End-->
-        <!-- About -->
-        <section class="about-area section-padding gray-bg">
+      <!-- slider Area Start-->
+      <div class="slider-area">
+        <div class="slider-active">
+          <!-- Slider 01 -->
+          <div
+            class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg1"
+          >
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-10">
-                        <div class="about-caption">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle section-tittle3">
-                                <h2>Contamos con una amplia gama de soluciones para su negocio</h2>
-                            </div>
-                            <div class="support-caption">
-                                <!-- <p class="pera-top">Quien Somos.</p> -->
-                                <a href="about.html" class="btn about-btn" style="background-color: #00a9e7;">Aprende más</a>
-                            </div>
-                        </div>
+              <div class="row no-gutters align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                  <div
+                    class="hero-caption-left"
+                    style="
+                      background: linear-gradient(
+                        4deg,
+                        rgba(23, 88, 152, 1) 34%,
+                        rgba(0, 169, 231, 1) 100%
+                      );
+                    "
+                  >
+                    <h1 data-animation="bounceIn" data-delay=".4s">
+                      Infórmese del estado de nuestros servicios.
+                    </h1>
+                    <!-- Hero-btn -->
+                    <div
+                      class="hero__btn"
+                      data-animation="fadeInUp"
+                      data-delay=".7s"
+                    >
+                      <a href="services.html" class="border-btn hero-btn"
+                        >Nuestros servicios</a
+                      >
                     </div>
-                    <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
-                        <div class="about-blog">
-                            <div class="single-offers d-flex  mb-20">
-                                <div class="icon">
-                                    <img src="assets/img/icon/notification1.svg" alt="this icon" class="icon-border">
-                                </div>
-                                <div class="offers-cap">
-                                    <!-- <h3><a href="#">El seguimiento es fácil</a></h3> -->
-                                    <p>Con diez años de experiencia en logística de comercio electrónico transfronterizo en países latinoamericanos, Ucorreos ha ayudado a cientos de empresas a desarrollar sus negocios de comercio electrónico durante el período de rápido crecimiento del comercio electrónico en América Latina.</p>
-                                </div>
-                            </div>
-                            <div class="single-offers d-flex  mb-20">
-                                <div class="icon">
-                                    <img src="assets/img/icon/notification1.svg" alt="this icon" class="icon-border">
-                                </div>
-                                <div class="offers-cap">
-                                    <!-- <h3><a href="#">Múltiples Almacenes</a></h3> -->
-                                    <p>Ucorreos ofrece varios niveles de servicio, ya sean vendedores individuales o corporaciones gigantes.</p>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
+                  <div class="hero-caption-right">
+                    <img
+                      class="icon"
+                      src="assets/img/icon/Subtraction.svg"
+                      alt=""
+                    />
+                    <h2 data-animation="fadeInUp" data-delay=".3s">
+                      Brindamos Soluciones alternativas de Cross boarder E
+                      commerce, Material impreso, publicaciones y marketing
+                      directo
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider 02 -->
+          <div
+            class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg2"
+          >
+            <div class="container">
+              <div class="row no-gutters align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                  <div
+                    class="hero-caption-left"
+                    style="
+                      background: linear-gradient(
+                        4deg,
+                        rgba(23, 88, 152, 1) 34%,
+                        rgba(0, 169, 231, 1) 100%
+                      );
+                    "
+                  >
+                    <h1 data-animation="bounceIn" data-delay=".4s">
+                      Encuentra la paz interior en el servicio profesional
+                    </h1>
+                    <!-- Hero-btn -->
+                    <div
+                      class="hero__btn"
+                      data-animation="fadeInUp"
+                      data-delay=".7s"
+                    >
+                      <a
+                        href="https://www.31track.com/"
+                        target="_blank"
+                        class="border-btn hero-btn"
+                        >Haga clic para referencia</a
+                      >
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="about-shape">
-                <img src="assets/img/gallery/truck.png" alt="">
-            </div>
-        </section>
-        <!-- About Area End-->
-        <!-- Visit Our Tailor Start -->
-        <div class="visit-tailor-area fix" style="background: linear-gradient(4deg, rgba(23,88,152,1) 34%, rgba(0,169,231,1) 100%);">
-         <!-- left Contents -->
-         <div class="tailor-offers"></div>
-         <!--Right Contents  -->
-         <div class="tailor-details">
-            <h2>Le damos el control total <br> de tus envíos.</h2>
-            <div class="sinlge-wrapper">
-                <div class="single-details left-line">
-                    <h3>Solución Logística</h3>
-                    <p>Ucorreos ofrece varios niveles de servicio, ya sean vendedores individuales o corporaciones gigantes.</p>
-                    <a href="#" class="more-btn">Leer más <i class="ti-arrow-top-right"></i></a>
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
+                  <div class="hero-caption-right">
+                    <img
+                      class="icon"
+                      src="assets/img/icon/Subtraction.svg"
+                      alt=""
+                    />
+                    <h2 data-animation="fadeInUp" data-delay=".3s">
+                      Las soluciones de rastreo de Ucorreos muestran el progreso
+                      de su envío en cada paso del camino, a través de la ciudad
+                      o alrededor del continente
+                    </h2>
+                  </div>
                 </div>
-                <div class="single-details">
-                    <h3>Solución Logística</h3>
-                    <p>Nuestra misión es brindar soluciones logísticas personalizadas y confiables a otras empresas de logística, plataformas de comercio electrónico y vendedores en línea.</p>
-                    <a href="#" class="more-btn">Leer más <i class="ti-arrow-top-right"></i></a>
-                </div>
+              </div>
             </div>
+          </div>
+          <!-- Slider 03 -->
+          <div
+            class="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg3"
+          >
+            <div class="container">
+              <div class="row no-gutters align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                  <div
+                    class="hero-caption-left"
+                    style="
+                      background: linear-gradient(
+                        4deg,
+                        rgba(23, 88, 152, 1) 34%,
+                        rgba(0, 169, 231, 1) 100%
+                      );
+                    "
+                  >
+                    <h1 data-animation="bounceIn" data-delay=".4s">
+                      Vamos a donde quieras llegar
+                    </h1>
+                    <!-- Hero-btn -->
+                    <div
+                      class="hero__btn"
+                      data-animation="fadeInUp"
+                      data-delay=".7s"
+                    >
+                      <a href="#services" class="border-btn hero-btn"
+                        >Haga clic para referencia</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
+                  <div class="hero-caption-right">
+                    <img
+                      class="icon"
+                      src="assets/img/icon/Subtraction.svg"
+                      alt=""
+                    />
+                    <h2 data-animation="fadeInUp" data-delay=".3s">
+                      Brindamos Soluciones alternativas de Cross boarder E
+                      commerce, Consolidación y Transporte internacional
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Services-area Start -->
-    <section id="services" class="sercices-area section-padding">
+      </div>
+      <!-- slider Area End-->
+      <!-- About -->
+      <section class="about-area section-padding gray-bg">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 col-sm-11">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-60">
-                        <h2>Nuestros Servicios</h2>
-                    </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-10">
+              <div class="about-caption">
+                <!-- Section Tittle -->
+                <div class="section-tittle section-tittle3">
+                  <h2>
+                    Contamos con una amplia gama de soluciones para su negocio
+                  </h2>
                 </div>
+                <div class="support-caption">
+                  <!-- <p class="pera-top">Quien Somos.</p> -->
+                  <a
+                    href="about.html"
+                    class="btn about-btn"
+                    style="background-color: #00a9e7"
+                    >Aprende más</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-40">
-                        <div class="properties-card">
-                            <div class="properties-img">
-                                <a href="#"><img src="assets/img/gallery/services1.jpg" alt=""></a>
-                            </div>
-                            <div class="properties-caption">
-                                <h3><a href="#"><span style="color: #175898;">01. </span>Soluciones eCommerce</a></h3>
-                                <p>Descubra nuestras soluciones de <strong>Cross Border B2C </strong>para la industria global de Comercio Electrónico.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
+              <div class="about-blog">
+                <div class="single-offers d-flex mb-20">
+                  <div class="icon">
+                    <img
+                      src="assets/img/icon/notification1.svg"
+                      alt="this icon"
+                      class="icon-border"
+                    />
+                  </div>
+                  <div class="offers-cap">
+                    <!-- <h3><a href="#">El seguimiento es fácil</a></h3> -->
+                    <p>
+                      Con diez años de experiencia en logística de comercio
+                      electrónico transfronterizo en países latinoamericanos,
+                      Ucorreos ha ayudado a cientos de empresas a desarrollar
+                      sus negocios de comercio electrónico durante el período de
+                      rápido crecimiento del comercio electrónico en América
+                      Latina.
+                    </p>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-40">
-                        <div class="properties-card">
-                            <div class="properties-img">
-                                <a href="#"><img src="assets/img/gallery/services2.jpg" alt=""></a>
-                            </div>
-                            <div class="properties-caption">
-                                <h3><a href="#"><span style="color: #175898;">02. </span> Aéreo y Marítimo <strong>Conveyance</strong></a></h3>
-                                <p>Descubra las mejores soluciones de envío aéreo y marítimo para su negocio.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="single-offers d-flex mb-20">
+                  <div class="icon">
+                    <img
+                      src="assets/img/icon/notification1.svg"
+                      alt="this icon"
+                      class="icon-border"
+                    />
+                  </div>
+                  <div class="offers-cap">
+                    <!-- <h3><a href="#">Múltiples Almacenes</a></h3> -->
+                    <p>
+                      Ucorreos ofrece varios niveles de servicio, ya sean
+                      vendedores individuales o corporaciones gigantes.
+                    </p>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-40">
-                        <div class="properties-card">
-                            <div class="properties-img">
-                                <a href="#"><img src="assets/img/gallery/services3.jpg" alt=""></a>
-                            </div>
-                            <div class="properties-caption">
-                                <h3><a href="#"><span style="color: #175898;">03. </span>Servicio de Almacén</a></h3>
-                                <p>Warehouses ubicados estratégicamente para brindarle servicios seguros y eficientes.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!--services-area  End -->
-    <!-- Visit Our Tailor End -->
-    <!-- contact-form start -->
-    <section class="contact-form-area gray-bg fix">
+        <div class="about-shape">
+          <img src="assets/img/gallery/truck.png" alt="" />
+        </div>
+      </section>
+      <!-- About Area End-->
+      <!-- Visit Our Tailor Start -->
+      <div
+        class="visit-tailor-area fix"
+        style="
+          background: linear-gradient(
+            4deg,
+            rgba(23, 88, 152, 1) 34%,
+            rgba(0, 169, 231, 1) 100%
+          );
+        "
+      >
+        <!-- left Contents -->
+        <div class="tailor-offers"></div>
+        <!--Right Contents  -->
+        <div class="tailor-details">
+          <h2>
+            Le damos el control total <br />
+            de tus envíos.
+          </h2>
+          <div class="sinlge-wrapper">
+            <div class="single-details left-line">
+              <!-- <h3>Solución Logística</h3> -->
+              <p>
+                El servicio de Ucorreos es excepcional. Las soluciones que
+                ofrecemos son visibilidad, solvencia, confiabilidad
+              </p>
+              <a href="#" class="more-btn"
+                >Leer más <i class="ti-arrow-top-right"></i
+              ></a>
+            </div>
+            <div class="single-details">
+              <!-- <h3>Solución Logística</h3> -->
+              <p>
+                Nuestra misión es brindar soluciones logísticas personalizadas y
+                confiables a otras empresas de logística, plataformas de
+                comercio electrónico y vendedores en línea.
+              </p>
+              <a href="#" class="more-btn"
+                >Leer más <i class="ti-arrow-top-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Services-area Start -->
+      <section id="services" class="sercices-area section-padding">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-5">
-                    <div class="contact-caption">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle section-tittle3">
-                            <h2>Get free quote</h2>
-                            <p>Praesent eu rhoncus nibh. Quisque tincidunt, nisi in enetis commodo, neque quam pharetra dolor, nec lacinia.</p>
-                            <a href="#" class="btn mt-20" style="background-color: #00a9e7;"><i class="fas fa-phone-alt"></i> +10(78) 267 3565</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact wrapper -->
-                <div class="col-xl-8 col-xxl-7 col-lg-7">
-                    <div class="contact-form-wrapper" style="border-color: #175898;">
-                        <!-- form -->
-                        <form action="#" class="contact-form">
-                            <div class="row ">
-
-                                <!-- select-Categories start -->
-                                <div class="select-Categories">
-                                    <label class="containers">
-                                        Ocean Freight
-                                        <input type="checkbox" ><span class="checkmark"></span>
-                                    </label>
-                                    <label class="containers">
-                                        Air Freight
-                                        <input type="checkbox" checked="checked active"> <span class="checkmark" style="background-color: #175898;"></span>
-                                    </label>
-                                    <label class="containers">
-                                        Land Transport
-                                        <input type="checkbox"> <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
-
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="input-form">
-                                        <label>CARGO TYPE</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="input-form">
-                                        <label>COUNTRY OF ORIGIN</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="input-form">
-                                        <label>DESTINATION</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-2 col-md-2 col-sm-6 ">
-                                    <div class="input-form">
-                                        <label>QTY</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-6 col-half-offset">
-                                    <div class="input-form">
-                                        <label>WEIGHT</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-6 col-half-offset">
-                                    <div class="input-form">
-                                        <label>WIDTH</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <!-- Height Width length -->
-                                <div class="col-lg-2 col-md-2 col-sm-6 col-half-offset">
-                                    <div class="input-form">
-                                        <label>HEIGHT</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-6 col-half-offset">
-                                    <div class="input-form">
-                                        <label>LEIGHT</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="input-form">
-                                        <label>NAME</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="input-form">
-                                        <label>E-MAIL</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="input-form">
-                                        <label>PHONE</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                
-                                <!-- Button -->
-                                <div class="col-lg-12">
-                                    <button name="submit" class="submit-btn2" style="background-color: #00a9e7;">Request Quote</button>
-                                </div>
-                            </div>
-                        </form>	
-                    </div>
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-11">
+              <!-- Section Tittle -->
+              <div class="section-tittle text-center mb-60">
+                <h2>Nuestros Servicios</h2>
+              </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="properties mb-40">
+                <div class="properties-card">
+                  <div class="properties-img">
+                    <a href="#"
+                      ><img src="assets/img/gallery/services1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="properties-caption">
+                    <h3>
+                      <a href="#"
+                        ><span style="color: #175898">01. </span>Soluciones
+                        eCommerce</a
+                      >
+                    </h3>
+                    <p>
+                      Descubra nuestras soluciones de
+                      <strong>Cross Border B2C </strong>para la industria global
+                      de Comercio Electrónico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="properties mb-40">
+                <div class="properties-card">
+                  <div class="properties-img">
+                    <a href="#"
+                      ><img src="assets/img/gallery/services2.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="properties-caption">
+                    <h3>
+                      <a href="#"
+                        ><span style="color: #175898">02. </span> Aéreo y
+                        Marítimo <strong>Conveyance</strong></a
+                      >
+                    </h3>
+                    <p>
+                      Descubra las mejores soluciones de envío aéreo y marítimo
+                      para su negocio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="properties mb-40">
+                <div class="properties-card">
+                  <div class="properties-img">
+                    <a href="#"
+                      ><img src="assets/img/gallery/services3.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="properties-caption">
+                    <h3>
+                      <a href="#"
+                        ><span style="color: #175898">03. </span>Servicio de
+                        Almacén</a
+                      >
+                    </h3>
+                    <p>
+                      Warehouses ubicados estratégicamente para brindarle
+                      servicios seguros y eficientes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- contact-form end -->
-    <!-- video_start -->
-    <div class="video-area section-img-bg d-flex align-items-center" data-background="assets/img/gallery/video-bg.jpg">
+      </section>
+      <!--services-area  End -->
+      <!-- Visit Our Tailor End -->
+      <!-- quoter-form start -->
+      <section id="quoter" class="contact-form-area gray-bg fix">
         <div class="container">
-            <div class="video-wrap position-relative">
-                <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play" style="color:#175898;"></i></a>
+          <div class="row justify-content-between">
+            <div class="col-xl-4 col-lg-5">
+              <div class="contact-caption">
+                <!-- Section Tittle -->
+                <div class="section-tittle section-tittle3">
+                  <h2>Cotizador</h2>
+                  <p>Calcula el valor de tu compra.</p>
+
+                  <div class="row">
+                    <div
+                      class="contact-form-wrapper"
+                      style="border-color: #175898"
+                    >
+                      <form action="#" class="contact-form">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="input-form">
+                              <label>Costo del transporte:</label>
+                              <input
+                                id="shipment_cost"
+                                disabled
+                                type="text"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="input-form">
+                              <label>Impuestos, Derechos y Otros:</label>
+                              <input
+                                id="fixed_cost"
+                                disabled
+                                type="text"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="input-form">
+                              <label>Total estimado (CNY):</label>
+                              <input
+                                id="total_ammount"
+                                disabled
+                                type="text"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- video_end -->
-    <!-- Testimonial Area Start -->
-    <section class="testimonial-area section-bg1">
-        <div class="container" >   
-            <div class="testimonial-wrapper">
-                <div class="row">
+            <!-- Contact wrapper -->
+            <div class="col-xl-8 col-xxl-7 col-lg-7">
+              <div class="contact-form-wrapper" style="border-color: #175898">
+                <!-- form -->
+                <form
+                  onsubmit="return onSubmit()"
+                  action="#"
+                  class="contact-form"
+                >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <label>Método de envío</label>
+                        <select id="shipment_type">
+                          <option value="aerial">Aéreo</option>
+                          <option value="maritime">Marítimo</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <label>Tipo de envío</label>
+                        <select id="cargo_type">
+                          <option value="normal">Normal</option>
+                          <option value="special">Especial</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="input-form">
+                        <label>Valor del producto en usd (Miami):</label>
+                        <input type="text" placeholder="0" />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div class="input-form">
+                        <label>Peso(Kg):</label>
+                        <input id="weight" placeholder="0" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="input-form">
+                        <label> </label>
+                        <select>
+                          <option>Kgs.</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div class="input-form">
+                        <label>Dimenciones</label>
+                        <input placeholder="Alto" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="input-form">
+                        <label> </label>
+                        <select>
+                          <option>Cms.</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <input placeholder="Ancho" type="text" />
+                      </div>
+                    </div>
+                    <!-- Height Width length -->
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <input placeholder="Largo" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <label>Region:</label>
+                        <select>
+                          <option>XIII - Metropolitana de santiago</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="input-form">
+                        <label>Productos:</label>
+                        <select>
+                          <option>Productos Generales</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Button -->
                     <div class="col-lg-12">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-50">
-                            <h2>Client Testimonial</h2>
-                        </div>
+                      <button
+                        name="submit"
+                        class="submit-btn2"
+                        style="background-color: #00a9e7"
+                      >
+                        Cotizar
+                      </button>
                     </div>
-                </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-xl-9 col-lg-10 col-md-12 col-sm-11">
-                        <!-- Testimonial Start -->
-                        <div class="h1-testimonial-active">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption">
-                                    <p>"Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                    <div class="founder-img">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                    </div>
-                                    <div class="founder-text">
-                                        <span>Jacson Miller</span>
-                                        <p>Designer @Colorlib</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption">
-                                    <p>"Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                    <div class="founder-img">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                    </div>
-                                    <div class="founder-text">
-                                        <span>Jacson Miller</span>
-                                        <p>Designer @Colorlib</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial End -->
-                    </div>
-                </div>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Testimonial Area End -->
-    <!-- Map -->
-    <div class="map-are">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786539269224!2d55.27218771500953!3d25.197196983896188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1588690958350!5m2!1sen!2sbd" width="100%" height="448" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </section>
+      <!-- quoter-form end -->
+      <!-- video_start -->
+      <div
+        class="video-area section-img-bg d-flex align-items-center"
+        data-background="assets/img/gallery/video-bg.jpg"
+      >
+        <div class="container">
+          <div class="video-wrap position-relative">
+            <div class="video-icon">
+              <a
+                class="popup-video btn-icon"
+                href="https://www.youtube.com/watch?v=up68UAfH0d0"
+                ><i class="fas fa-play" style="color: #175898"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- video_end -->
+      <!-- Aliance Area Start -->
+      <section id="aliance" class="testimonial-area section-bg1">
+        <div class="container">
+          <div class="testimonial-wrapper">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle text-center mb-50">
+                  <h2>Alianzas</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11">
+                <div class="section_header">
+                  <div class="section_spacer"></div>
+                  <div class="section_text">
+                    Nuestros
+                    <div class="accent">Clientes</div>
+                  </div>
+                  <div class="section_spacer"></div>
+                </div>
+                <div class="logos_row">
+                  <div style="display: flex">
+                    <img
+                      src="./assets/img/icon/shopee.svg"
+                      width="222px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex">
+                    <img
+                      src="./assets/img/icon/mercadolibre.png"
+                      width="222px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/shopify.png"
+                      width="222px"
+                      height="48px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/linio.png"
+                      width="222px"
+                      height="42px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/donexpress.png"
+                      width="222px"
+                      height="69"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-12 col-lg-12 col-md-12 col-sm-11"
+                style="margin-top: 100px"
+              >
+                <div class="section_header">
+                  <div class="section_spacer"></div>
+                  <div class="section_text">
+                    Nuestros
+                    <div class="accent">Partners</div>
+                  </div>
+                  <div class="section_spacer"></div>
+                </div>
+                <div class="logos_row">
+                  <div style="display: flex">
+                    <img
+                      src="./assets/img/icon/masair.png"
+                      width="222px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex">
+                    <img
+                      src="./assets/img/icon/qatar.png"
+                      width="222px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/latam.png"
+                      width="222px"
+                      height="48px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/britishairways.png"
+                      width="222px"
+                      height="42px"
+                      alt=""
+                    />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="./assets/img/icon/31track.svg"
+                      width="222px"
+                      height="69"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Aliance Area End -->
+      <!-- Technologies Area Start -->
+      <section id="technologies" class="testimonial-area section-bg1">
+        <div class="container">
+          <div class="testimonial-wrapper">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle text-center mb-50">
+                  <h2>Tecnologías</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-xl-6 col-lg-6">
+                <h4>
+                  <strong>Tecnología de punta</strong> - Siempre conectados
+                </h4>
+                <div style="margin-top: 40px; text-align: justify">
+                  Contamos con la última tecnología en sistemas de seguimiento
+                  de paquetería y procesamiento de información para crear la
+                  mejor experiencia para nuestros clientes.
+                </div>
+                <div style="margin-top: 20px; text-align: justify">
+                  Pregunte a cualquier persona que envíe o reciba un paquete qué
+                  es importante y escuchará la confiabilidad. Por eso, creamos
+                  una tecnología de seguimiento que le permite ver, resolver y
+                  cumplir con las expectativas, localmente, globalmente, por
+                  paquete y envío.
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <img
+                  src="./assets/img/post/technology.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technologies Area End -->
+      <!-- Testimonial Area Start -->
+      <section class="testimonial-area section-bg1">
+        <div class="container">
+          <div class="testimonial-wrapper">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle text-center mb-50">
+                  <h2>Client Testimonial</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-9 col-lg-10 col-md-12 col-sm-11">
+                <!-- Testimonial Start -->
+                <div class="h1-testimonial-active">
+                  <!-- Single Testimonial -->
+                  <div class="single-testimonial text-center">
+                    <div class="testimonial-caption">
+                      <p>
+                        "Supercharge your WordPress hosting with detailed
+                        website analytics, marketing tools. Our experts are just
+                        part of the reason Bluehost is the ideal home for your
+                        WordPress website. We're here to help you succeed!
+                      </p>
+                    </div>
+                    <!-- founder -->
+                    <div
+                      class="testimonial-founder d-flex align-items-center justify-content-center"
+                    >
+                      <div class="founder-img">
+                        <img src="assets/img/gallery/testimonial.png" alt="" />
+                      </div>
+                      <div class="founder-text">
+                        <span>Jacson Miller</span>
+                        <p>Designer @Colorlib</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Testimonial -->
+                  <div class="single-testimonial text-center">
+                    <div class="testimonial-caption">
+                      <p>
+                        "Supercharge your WordPress hosting with detailed
+                        website analytics, marketing tools. Our experts are just
+                        part of the reason Bluehost is the ideal home for your
+                        WordPress website. We're here to help you succeed!
+                      </p>
+                    </div>
+                    <!-- founder -->
+                    <div
+                      class="testimonial-founder d-flex align-items-center justify-content-center"
+                    >
+                      <div class="founder-img">
+                        <img src="assets/img/gallery/testimonial.png" alt="" />
+                      </div>
+                      <div class="founder-text">
+                        <span>Jacson Miller</span>
+                        <p>Designer @Colorlib</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Area End -->
+      <!-- Map -->
+      <div class="map-are">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786539269224!2d55.27218771500953!3d25.197196983896188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1588690958350!5m2!1sen!2sbd"
+          width="100%"
+          height="448"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
         </iframe>
 
         <!-- A  -->
         <div class="map">
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-xl-3 col-lg-4">
-                        <div class="address">
-                            <h3 style="background-color: #175898;">Address</h3>
-                            <div class="address-info">
-                                <ul>
-                                    <li>New York - 1060, Str. First Avenue 1</li>
-                                    <li>+ (123) 1800-567-8990</li>
-                                    <li class="line">office@example.com</li>
-                                    
-                                    <li>Mon - Fri: 9:00 - 19:00</li>
-                                    <li>Closed on Weekends</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-xl-3 col-lg-4">
+                <div class="address">
+                  <h3 style="background-color: #175898">Address</h3>
+                  <div class="address-info">
+                    <ul>
+                      <li>New York - 1060, Str. First Avenue 1</li>
+                      <li>+ (123) 1800-567-8990</li>
+                      <li class="line">office@example.com</li>
+
+                      <li>Mon - Fri: 9:00 - 19:00</li>
+                      <li>Closed on Weekends</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Map -->
-</main>
-<footer>
-   <div class="footer-wrapper">
-    <div class="footer-area footer-padding">
-        <div class="container ">
+      </div>
+      <!-- End Map -->
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-area footer-padding">
+          <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-8 col-sm-8">
-                    <div class="single-footer-caption mb-50">
-                        <div class="single-footer-caption mb-30">
-                            <!-- logo -->
-                            <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="assets/img/logo/logo_image.png" width="93px" alt=""></a>
-                            </div>
-                            <div class="footer-tittle">
-                                <div class="footer-pera">
-                                    <p>Users and submit their own items. You can create different packages and by connecting with your PayPal or Stripe account charge users for registration.</p>
-                                </div>
-                            </div>
-                            <!-- social -->
-                            <div class="footer-social">
-                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
+              <div class="col-xl-5 col-lg-5 col-md-8 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="single-footer-caption mb-30">
+                    <!-- logo -->
+                    <div class="footer-logo mb-35">
+                      <a href="index.html"
+                        ><img
+                          src="assets/img/logo/logo_image.png"
+                          width="93px"
+                          alt=""
+                      /></a>
                     </div>
-                </div>
-                <div class="offset-xl-1  offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Quick links</h4>
-                            <ul>
-                                <li><a href="#">Listing</a></li>
-                                <li><a href="#">Submit your Business</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Cities</a></li>
-                            </ul>
-                        </div>
+                    <div class="footer-tittle">
+                      <div class="footer-pera">
+                        <p>
+                          Users and submit their own items. You can create
+                          different packages and by connecting with your PayPal
+                          or Stripe account charge users for registration.
+                        </p>
+                      </div>
                     </div>
-                </div>
-                <div class="offset-xl-1 offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">User Stories</a></li>
-                            </ul>
-                        </div>
+                    <!-- social -->
+                    <div class="footer-social">
+                      <a href="https://bit.ly/sai4ull"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div
+                class="offset-xl-1 offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4"
+              >
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Quick links</h4>
+                    <ul>
+                      <li><a href="#">Listing</a></li>
+                      <li><a href="#">Submit your Business</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Cities</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="offset-xl-1 offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4"
+              >
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Company</h4>
+                    <ul>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Testimonial</a></li>
+                      <li><a href="#">User Stories</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- footer-bottom area -->
-    <div class="footer-bottom-area">
-        <div class="container">
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+          <div class="container">
             <div class="footer-border">
-                <div class="row d-flex align-items-center">
-                    <div class="col-xl-12 ">
-                        <div class="footer-copy-right text-center text-white">
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Colorlib</a>
-                        </div>
-                    </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-xl-12">
+                  <div class="footer-copy-right text-center text-white">
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart color-danger" aria-hidden="true"></i>
+                    by
+                    <a
+                      href="https://colorlib.com"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      >Colorlib</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" style="background-color: #00a9e7">
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-</div>
-</footer>
-<!-- Scroll Up -->
-<div id="back-top" style="background-color: #00a9e7;">
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
 
-<!-- JS here -->
-<!-- Jquery, Popper, Bootstrap -->
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="./assets/js/popper.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
+    <!-- JS here -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 
-<!-- Slick-slider , Owl-Carousel ,slick-nav -->
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/js/slick.min.js"></script>
-<script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- Slick-slider , Owl-Carousel ,slick-nav -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-<!--wow , counter , waypoint, Nice-select -->
-<script src="./assets/js/wow.min.js"></script>
-<script src="./assets/js/jquery.magnific-popup.js"></script>
-<script src="./assets/js/jquery.nice-select.min.js"></script>
-<script src="./assets/js/jquery.counterup.min.js"></script>
-<script src="./assets/js/waypoints.min.js"></script>
+    <!--wow , counter , waypoint, Nice-select -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
 
-<!-- contact js -->
-<script src="./assets/js/contact.js"></script>
-<script src="./assets/js/jquery.form.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/mail-script.js"></script>
-<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-<!--  Plugins, main-Jquery -->	
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets/js/main.js"></script>
-</body>
+    <!--  Plugins, main-Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      function onSubmit() {
+        const shipment_type = document.getElementById("shipment_type").value;
+        const cargo_type = document.getElementById("cargo_type").value;
+        const weight = document.getElementById("weight").value;
+        let firstKilo = 0;
+        const rest = shipment_type === "aerial" ? 60 : 9;
+        const workWeight = Number.isInteger(Number(weight))
+          ? weight
+          : Math.floor(Number(weight)) + 1;
+        if (cargo_type === "normal") {
+          firstKilo = shipment_type === "aerial" ? 88 : 49;
+        } else {
+          firstKilo = shipment_type === "aerial" ? 95 : 68;
+        }
+        const shipment_cost = firstKilo + rest * (workWeight - 1);
+        const fixed_cost = 3;
+        const total = fixed_cost + shipment_cost;
+        document.getElementById("shipment_cost").value = shipment_cost;
+        document.getElementById("fixed_cost").value = fixed_cost;
+        document.getElementById("total_ammount").value = total;
+        console.log({ shipment_cost, fixed_cost });
+        return false;
+      }
+
+      function search() {
+        const code = document.getElementById("tracking_code").value;
+        if (code) {
+          const url = `https://www.31track.com/results?tn[]=${code}`;
+          window.open(url, "_blank").focus();
+        }
+      }
+    </script>
+  </body>
 </html>
