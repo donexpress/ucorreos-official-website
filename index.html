@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>UCorreos</title>
+    <title>uCorreos</title>
     <meta
       name="description"
       content="Consolidación, gestión y rastreo de envios internacionales a gran escala."
@@ -88,9 +88,9 @@
 
       .footer-social {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* text-align: center; */
       }
       .footer-social a {
         color: #ffffff !important;
@@ -103,14 +103,33 @@
       }
       .footer-area .footer-pera p {
         margin-bottom: 20px;
-        text-align: center;
+        text-align: left;
         padding-right: 0;
+      }
+      .active {
+        border-bottom: 1px solid #1d2547;
+        padding-bottom: 10px;
+      }
+
+      ::placeholder {
+        color: #bebebe !important;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #bebebe !important;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #bebebe !important;
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="header-area">
+      <div id="home" class="header-area">
         <div class="main-header header-sticky">
           <div class="container-fluid">
             <div class="row">
@@ -169,19 +188,29 @@
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#services">Servicio</a></li>
-                        <li><a href="#aliance">Alianzas</a></li>
-                        <li><a href="#technologies">Tecnologías</a></li>
-                        <!-- <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                </ul>
-                                            </li> -->
-                        <!-- <li><a href="consolidation.html">Consolidación</a></li> -->
-                        <li><a href="#quote">Cotizador</a></li>
+                        <li>
+                          <a href="#home"><span class="home">Inicio</span></a>
+                        </li>
+                        <li>
+                          <a href="#services"
+                            ><span class="services">Servicio</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#aliance"
+                            ><span class="aliance">Alianzas</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#technologies"
+                            ><span class="technologies">Tecnologías</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#quote"
+                            ><span class="quote">Cotizador</span></a
+                          >
+                        </li>
                       </ul>
                     </nav>
                   </div>
@@ -216,7 +245,7 @@
     </header>
     <main>
       <!-- slider Area Start-->
-      <div class="slider-area">
+      <div id="home" class="slider-area">
         <div class="slider-active">
           <!-- Slider 01 -->
           <div
@@ -261,7 +290,7 @@
                       alt=""
                     />
                     <h2 data-animation="fadeInUp" data-delay=".3s">
-                      Las soluciones de rastreo de Ucorreos muestran el progreso
+                      Las soluciones de rastreo de uCorreos muestran el progreso
                       de su envío en cada paso del camino, a través de la ciudad
                       o alrededor del continente
                     </h2>
@@ -373,7 +402,7 @@
       </div>
       <!-- slider Area End-->
       <!-- About -->
-      <section class="about-area section-padding gray-bg">
+      <section id="home" class="about-area section-padding gray-bg">
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-10">
@@ -410,7 +439,7 @@
                     <p>
                       Con diez años de experiencia en logística de comercio
                       electrónico transfronterizo en países latinoamericanos,
-                      Ucorreos ha ayudado a cientos de empresas a desarrollar
+                      uCorreos ha ayudado a cientos de empresas a desarrollar
                       sus negocios de comercio electrónico durante el período de
                       rápido crecimiento del comercio electrónico en América
                       Latina.
@@ -428,7 +457,7 @@
                   <div class="offers-cap">
                     <!-- <h3><a href="#">Múltiples Almacenes</a></h3> -->
                     <p>
-                      Ucorreos ofrece varios niveles de servicio, ya sean
+                      uCorreos ofrece varios niveles de servicio, ya sean
                       vendedores individuales o corporaciones gigantes.
                     </p>
                   </div>
@@ -465,7 +494,7 @@
             <div class="single-details left-line">
               <!-- <h3>Solución Logística</h3> -->
               <p>
-                El servicio de Ucorreos es excepcional. Las soluciones que
+                El servicio de uCorreos es excepcional. Las soluciones que
                 ofrecemos son visibilidad, solvencia, confiabilidad
               </p>
               <!-- <a href="#" class="more-btn"
@@ -502,15 +531,15 @@
               <div class="properties mb-40">
                 <div class="properties-card">
                   <div class="properties-img">
-                    <a href="#"
+                    <span
                       ><img src="assets/img/gallery/services1.jpg" alt=""
-                    /></a>
+                    /></span>
                   </div>
-                  <div class="properties-caption">
+                  <div>
                     <h3>
-                      <a href="#"
+                      <span style="color: #175898; font-size: 24px !important; font-weight: bold !important;"
                         ><span style="color: #175898">01. </span>Soluciones
-                        eCommerce</a
+                        eCommerce</span
                       >
                     </h3>
                     <p>
@@ -526,15 +555,15 @@
               <div class="properties mb-40">
                 <div class="properties-card">
                   <div class="properties-img">
-                    <a href="#"
+                    <span
                       ><img src="assets/img/gallery/services2.jpg" alt=""
-                    /></a>
+                    /></span>
                   </div>
-                  <div class="properties-caption">
+                  <div>
                     <h3>
-                      <a href="#"
+                      <span style="color: #175898; font-size: 24px !important; font-weight: bold !important;"
                         ><span style="color: #175898">02. </span> Aéreo y
-                        Marítimo Conveyance</a
+                        Marítimo Conveyance</span
                       >
                     </h3>
                     <p>
@@ -549,15 +578,15 @@
               <div class="properties mb-40">
                 <div class="properties-card">
                   <div class="properties-img">
-                    <a href="#"
+                    <span
                       ><img src="assets/img/gallery/services3.jpg" alt=""
-                    /></a>
+                    /></span>
                   </div>
-                  <div class="properties-caption">
+                  <div>
                     <h3>
-                      <a href="#"
+                      <span style="color: #175898; font-size: 24px !important; font-weight: bold !important;"
                         ><span style="color: #175898">03. </span>Servicio de
-                        Almacén</a
+                        Almacén</span
                       >
                     </h3>
                     <p>
@@ -651,11 +680,25 @@
                     <div class="select-Categories">
                       <label class="containers">
                         Marítimo
-                        <input type="checkbox" /><span class="checkmark"></span>
+                        <input
+                          id="shipmentType"
+                          value="sea"
+                          type="checkbox"
+                          class="chb"
+                        />
+                        <span
+                          class="checkmark"
+                          style="background-color: #175898"
+                        ></span>
                       </label>
                       <label class="containers">
                         Aéreo
-                        <input type="checkbox" checked="checked active" />
+                        <input
+                          id="shipmentType"
+                          type="checkbox"
+                          class="chb"
+                          value="aerial"
+                        />
                         <span
                           class="checkmark"
                           style="background-color: #175898"
@@ -663,21 +706,38 @@
                       </label>
                       <label class="containers">
                         Terrestre
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <input
+                          id="shipmentType"
+                          type="checkbox"
+                          class="chb"
+                          value="land"
+                        />
+                        <span
+                          class="checkmark"
+                          style="background-color: #175898"
+                        ></span>
                       </label>
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Nombre y apellidos *</label>
-                        <input type="text" placeholder="Pepe Pérez Pérez" />
+                        <input
+                          type="text"
+                          id="name"
+                          required
+                          placeholder="Pepe Pérez Pérez"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Peso o Volumen</label>
-                        <input id="weight-or-volume" placeholder="0" type="text" />
+                        <input
+                          id="weight-or-volume"
+                          placeholder="0"
+                          type="text"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -685,6 +745,8 @@
                         <label>Correo electrónico *</label>
                         <input
                           type="email"
+                          id="email"
+                          required
                           placeholder="correo@electrónico.com"
                         />
                       </div>
@@ -692,7 +754,12 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Número de teléfono *</label>
-                        <input type="text" placeholder="+1 (123) 445-6789" />
+                        <input
+                          type="text"
+                          id="phone_number"
+                          required
+                          placeholder="+1 (123) 445-6789"
+                        />
                       </div>
                     </div>
                     <!-- <div class="col-lg-6 col-md-6 col-sm-6"> -->
@@ -708,13 +775,23 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>País de origen *</label>
-                        <input type="text" placeholder="EEUU" />
+                        <input
+                          type="text"
+                          id="origin_country"
+                          required
+                          placeholder="EEUU"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>País de destino *</label>
-                        <input type="text" placeholder="México" />
+                        <input
+                          type="text"
+                          id="destination_country"
+                          required
+                          placeholder="México"
+                        />
                       </div>
                     </div>
 
@@ -1144,8 +1221,13 @@
                       <a href="https://twitter.com/DonExpressMx"><i class="fab fa-twitter"></i></a>
                       <a href="https://www.pinterest.com.mx/kentDonExpress/"><i class="fab fa-pinterest-p"></i></a>
                       <a href="#"><i class="fab fa-tiktok"></i></a> -->
-                      <a href="#"><i class="fa fa-map-marker-alt"></i></a>
-                      <div class="footer-pera">
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        `
+                        <a href="#"><i class="fa fa-map-marker-alt"></i></a>
+                      </div>
+                      <div
+                        class="footer-pera col-xl-9 col-lg-9 col-md-9 col-sm-9"
+                      >
                         <p>
                           Humboldt 56, Colonia Centro, Cuauhtemoc, CP: 06000,
                           Ciudad de México
@@ -1245,7 +1327,6 @@
     <script src="./assets/js/main.js"></script>
     <script>
       function onSubmit() {
-        // const shipment_type = document.getElementById("shipment_type").value;
         // const cargo_type = document.getElementById("cargo_type").value;
         // const weight = document.getElementById("weight").value;
         // let firstKilo = 0;
@@ -1265,7 +1346,30 @@
         // document.getElementById("fixed_cost").value = fixed_cost;
         // document.getElementById("total_ammount").value = total;
         // console.log({ shipment_cost, fixed_cost });
-        alert("Gracias, le contactaremos");
+        var checks = $('input[type="checkbox"]:checked')
+          .map(function () {
+            return $(this).val();
+          })
+          .get();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone_number").value;
+        var oCountry = document.getElementById("origin_country").value;
+        var dCountry = document.getElementById("destination_country").value;
+        var msg = "Gracias, le contactaremos";
+        if(checks.length == 0) {
+          msg = "Por favor, seleccione un método de envío (marítimo, aéreo o terrestre).";
+        }
+        if (
+          name === "" ||
+          email === "" ||
+          phone === "" ||
+          oCountry === "" ||
+          dCountry === ""
+        ) {
+          msg = "Por favor, llene todos los campos requeridos.";
+        }
+        alert(msg);
         return false;
       }
 
@@ -1276,6 +1380,31 @@
           window.open(url, "_blank").focus();
         }
       }
+
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav ul li a span");
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      };
+
+      $(".chb").change(function () {
+        $(".chb").prop("checked", false);
+        $(this).prop("checked", true);
+      });
     </script>
   </body>
 </html>
