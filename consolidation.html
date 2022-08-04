@@ -24,10 +24,6 @@
     <link rel="stylesheet" href="assets/css/nice-select.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-      .nice-select {
-        height: 50px !important;
-        padding: 3px 19px 11px 31px !important;
-      }
       .tracking_container input[type="text"] {
         width: 200px;
         height: 30px;
@@ -120,7 +116,7 @@
                                                         <li><a href="elements.html">Elements</a></li>
                                                     </ul>
                                                 </li> -->
-                            <!-- <li><a href="consolidation.html">Consolidación</a></li> -->
+                            <li><a href="consolidation.html">Consolidación</a></li>
                             <li><a href="./quoter.html">Cotizador</a></li>
                           </ul>
                     </nav>
@@ -159,165 +155,18 @@
       <section class="contact-form-area gray-bg fix">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-xl-4 col-lg-5">
+            <div class="col-xl-12 col-lg-12">
               <div class="contact-caption">
                 <!-- Section Tittle -->
-                <div class="section-tittle section-tittle3">
-                  <h2>Cotizador</h2>
-                  <!-- <p>Calcula el valor de tu compra.</p>
-
-                            <div class="row">
-                                <div class="contact-form-wrapper" style="border-color: #175898;">
-                                    <form action="#" class="contact-form">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div class="input-form">
-                                                    <label>Costo del transporte:</label>
-                                                    <input id="shipment_cost" disabled type="text" placeholder="0">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div class="input-form">
-                                                    <label>Costo fijo consolidacion, etiquetado y empaque:</label>
-                                                    <input id="total_fixed_cost" disabled type="text" placeholder="0">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div class="input-form">
-                                                    <label>Total estimado (CNY):</label>
-                                                    <input id="total_amount" disabled type="text" placeholder="0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> -->
+                <div class="section-tittle text-center section-tittle3">
+                  <h2>Consolidación</h2>
                 </div>
-              </div>
-            </div>
-            <!-- Contact wrapper -->
-            <div class="col-xl-8 col-xxl-7 col-lg-7" style="padding-bottom: 60px;">
-              <div class="contact-form-wrapper" style="border-color: #175898">
-                <!-- form -->
-                <form
-                  onsubmit="return onSubmit()"
-                  action="#"
-                  class="contact-form"
-                >
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="input-form">
-                      <label>Nombre y apellidos</label>
-                      <input type="text" placeholder="Pepe Pérez Pérez" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <label>Correo electrónico</label>
-                      <input
-                        type="email"
-                        placeholder="correo@electrónico.com"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <label>Número de teléfono</label>
-                      <input type="text" placeholder="+1 (123) 445-6789" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <label>Método de envío</label>
-                      <select id="shipment_type">
-                        <option value="aerial">Aéreo</option>
-                        <option value="maritime">Marítimo</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <label>Valor del producto en usd:</label>
-                      <input type="text" placeholder="0" />
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8 col-sm-8">
-                    <div class="input-form">
-                      <label>Peso(Kg):</label>
-                      <input id="weight" placeholder="0" type="text" />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="input-form">
-                      <label> </label>
-                      <select>
-                        <option>Kgs.</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-8 col-md-8 col-sm-8">
-                    <div class="input-form">
-                      <label>dimensiones</label>
-                      <input placeholder="Alto" type="text" />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="input-form">
-                      <label> </label>
-                      <select>
-                        <option>Cms.</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <input placeholder="Ancho" type="text" />
-                    </div>
-                  </div>
-                  <!-- Height Width length -->
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <input placeholder="Largo" type="text" />
-                    </div>
-                  </div>
-
-                  <!-- Button -->
-                  <div class="col-lg-12">
-                    <button
-                      name="submit"
-                      class="submit-btn2"
-                      style="background-color: #00a9e7"
-                    >
-                      Cotizar
-                    </button>
-                  </div>
-                </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- contact-form end -->
-      <!-- video_start -->
-      <!-- <div
-        class="video-area section-img-bg d-flex align-items-center"
-        data-background="assets/img/gallery/video-bg.jpg"
-      >
-        <div class="container">
-          <div class="video-wrap position-relative">
-            <div class="video-icon">
-              <a
-                class="popup-video btn-icon"
-                href="https://www.youtube.com/watch?v=up68UAfH0d0"
-                ><i class="fas fa-play" style="color: #175898"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- video_end -->
     </main>
     <footer>
       <div class="footer-wrapper">
@@ -360,20 +209,20 @@
               <div
                 class="offset-xl-1 offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4"
               >
-              <div class="single-footer-caption mb-50">
-                <div class="footer-tittle">
-                  <h4>Quick links</h4>
-                  <ul>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#aliance">Alianzas</a></li>
-                    <li><a href="#technologies">Tecnologías</a></li>
-                    <li><a href="./quoter.html">Cotizador</a></li>
-                    <!-- <li><a href="#">Cities</a></li> -->
-                  </ul>
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Quick links</h4>
+                    <ul>
+                      <li><a href="#">Listing</a></li>
+                      <li><a href="#">Submit your Business</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Cities</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              </div>
-              <!-- <div
+              <div
                 class="offset-xl-1 offset-lg-1 col-xl-2 col-lg-2 col-md-4 col-sm-4"
               >
                 <div class="single-footer-caption mb-50">
@@ -387,7 +236,7 @@
                     </ul>
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
