@@ -110,6 +110,21 @@
         border-bottom: 1px solid #1d2547;
         padding-bottom: 10px;
       }
+
+      ::placeholder {
+        color: #bebebe !important;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #bebebe !important;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #bebebe !important;
+      }
     </style>
   </head>
   <body>
@@ -683,7 +698,6 @@
                           type="checkbox"
                           class="chb"
                           value="aerial"
-                          checked="checked active"
                         />
                         <span
                           class="checkmark"
@@ -711,6 +725,7 @@
                         <input
                           type="text"
                           id="name"
+                          required
                           placeholder="Pepe Pérez Pérez"
                         />
                       </div>
@@ -731,6 +746,7 @@
                         <input
                           type="email"
                           id="email"
+                          required
                           placeholder="correo@electrónico.com"
                         />
                       </div>
@@ -741,6 +757,7 @@
                         <input
                           type="text"
                           id="phone_number"
+                          required
                           placeholder="+1 (123) 445-6789"
                         />
                       </div>
@@ -761,6 +778,7 @@
                         <input
                           type="text"
                           id="origin_country"
+                          required
                           placeholder="EEUU"
                         />
                       </div>
@@ -771,6 +789,7 @@
                         <input
                           type="text"
                           id="destination_country"
+                          required
                           placeholder="México"
                         />
                       </div>
@@ -1337,18 +1356,20 @@
         var phone = document.getElementById("phone_number").value;
         var oCountry = document.getElementById("origin_country").value;
         var dCountry = document.getElementById("destination_country").value;
+        var msg = "Gracias, le contactaremos";
+        if(checks.length == 0) {
+          msg = "Por favor, seleccione un método de envío (marítimo, aéreo o terrestre).";
+        }
         if (
-          checks.length == 0 ||
           name === "" ||
           email === "" ||
           phone === "" ||
           oCountry === "" ||
           dCountry === ""
         ) {
-          alert("Por favor, llene todos los campos requeridos.");
-        } else {
-          alert("Gracias, le contactaremos");
+          msg = "Por favor, llene todos los campos requeridos.";
         }
+        alert(msg);
         return false;
       }
 
