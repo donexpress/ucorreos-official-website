@@ -106,11 +106,15 @@
         text-align: left;
         padding-right: 0;
       }
+      .active {
+        border-bottom: 1px solid #1d2547;
+        padding-bottom: 10px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="header-area">
+      <div id="home" class="header-area">
         <div class="main-header header-sticky">
           <div class="container-fluid">
             <div class="row">
@@ -169,19 +173,29 @@
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#services">Servicio</a></li>
-                        <li><a href="#aliance">Alianzas</a></li>
-                        <li><a href="#technologies">Tecnologías</a></li>
-                        <!-- <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                </ul>
-                                            </li> -->
-                        <!-- <li><a href="consolidation.html">Consolidación</a></li> -->
-                        <li><a href="#quote">Cotizador</a></li>
+                        <li>
+                          <a href="#home"><span class="home">Inicio</span></a>
+                        </li>
+                        <li>
+                          <a href="#services"
+                            ><span class="services">Servicio</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#aliance"
+                            ><span class="aliance">Alianzas</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#technologies"
+                            ><span class="technologies">Tecnologías</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#quote"
+                            ><span class="quote">Cotizador</span></a
+                          >
+                        </li>
                       </ul>
                     </nav>
                   </div>
@@ -216,7 +230,7 @@
     </header>
     <main>
       <!-- slider Area Start-->
-      <div class="slider-area">
+      <div id="home" class="slider-area">
         <div class="slider-active">
           <!-- Slider 01 -->
           <div
@@ -373,7 +387,7 @@
       </div>
       <!-- slider Area End-->
       <!-- About -->
-      <section class="about-area section-padding gray-bg">
+      <section id="home" class="about-area section-padding gray-bg">
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-10">
@@ -651,11 +665,26 @@
                     <div class="select-Categories">
                       <label class="containers">
                         Marítimo
-                        <input type="checkbox" /><span class="checkmark"></span>
+                        <input
+                          id="shipmentType"
+                          value="sea"
+                          type="checkbox"
+                          class="chb"
+                        />
+                        <span
+                          class="checkmark"
+                          style="background-color: #175898"
+                        ></span>
                       </label>
                       <label class="containers">
                         Aéreo
-                        <input type="checkbox" checked="checked active" />
+                        <input
+                          id="shipmentType"
+                          type="checkbox"
+                          class="chb"
+                          value="aerial"
+                          checked="checked active"
+                        />
                         <span
                           class="checkmark"
                           style="background-color: #175898"
@@ -663,21 +692,37 @@
                       </label>
                       <label class="containers">
                         Terrestre
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <input
+                          id="shipmentType"
+                          type="checkbox"
+                          class="chb"
+                          value="land"
+                        />
+                        <span
+                          class="checkmark"
+                          style="background-color: #175898"
+                        ></span>
                       </label>
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Nombre y apellidos *</label>
-                        <input type="text" placeholder="Pepe Pérez Pérez" />
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="Pepe Pérez Pérez"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Peso o Volumen</label>
-                        <input id="weight-or-volume" placeholder="0" type="text" />
+                        <input
+                          id="weight-or-volume"
+                          placeholder="0"
+                          type="text"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -685,6 +730,7 @@
                         <label>Correo electrónico *</label>
                         <input
                           type="email"
+                          id="email"
                           placeholder="correo@electrónico.com"
                         />
                       </div>
@@ -692,7 +738,11 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>Número de teléfono *</label>
-                        <input type="text" placeholder="+1 (123) 445-6789" />
+                        <input
+                          type="text"
+                          id="phone_number"
+                          placeholder="+1 (123) 445-6789"
+                        />
                       </div>
                     </div>
                     <!-- <div class="col-lg-6 col-md-6 col-sm-6"> -->
@@ -708,13 +758,21 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>País de origen *</label>
-                        <input type="text" placeholder="EEUU" />
+                        <input
+                          type="text"
+                          id="origin_country"
+                          placeholder="EEUU"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="input-form">
                         <label>País de destino *</label>
-                        <input type="text" placeholder="México" />
+                        <input
+                          type="text"
+                          id="destination_country"
+                          placeholder="México"
+                        />
                       </div>
                     </div>
 
@@ -1144,10 +1202,13 @@
                       <a href="https://twitter.com/DonExpressMx"><i class="fab fa-twitter"></i></a>
                       <a href="https://www.pinterest.com.mx/kentDonExpress/"><i class="fab fa-pinterest-p"></i></a>
                       <a href="#"><i class="fab fa-tiktok"></i></a> -->
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">`
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        `
                         <a href="#"><i class="fa fa-map-marker-alt"></i></a>
                       </div>
-                      <div class="footer-pera col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                      <div
+                        class="footer-pera col-xl-9 col-lg-9 col-md-9 col-sm-9"
+                      >
                         <p>
                           Humboldt 56, Colonia Centro, Cuauhtemoc, CP: 06000,
                           Ciudad de México
@@ -1247,7 +1308,6 @@
     <script src="./assets/js/main.js"></script>
     <script>
       function onSubmit() {
-        // const shipment_type = document.getElementById("shipment_type").value;
         // const cargo_type = document.getElementById("cargo_type").value;
         // const weight = document.getElementById("weight").value;
         // let firstKilo = 0;
@@ -1267,7 +1327,28 @@
         // document.getElementById("fixed_cost").value = fixed_cost;
         // document.getElementById("total_ammount").value = total;
         // console.log({ shipment_cost, fixed_cost });
-        alert("Gracias, le contactaremos");
+        var checks = $('input[type="checkbox"]:checked')
+          .map(function () {
+            return $(this).val();
+          })
+          .get();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone_number").value;
+        var oCountry = document.getElementById("origin_country").value;
+        var dCountry = document.getElementById("destination_country").value;
+        if (
+          checks.length == 0 ||
+          name === "" ||
+          email === "" ||
+          phone === "" ||
+          oCountry === "" ||
+          dCountry === ""
+        ) {
+          alert("Por favor, llene todos los campos requeridos.");
+        } else {
+          alert("Gracias, le contactaremos");
+        }
         return false;
       }
 
@@ -1278,6 +1359,31 @@
           window.open(url, "_blank").focus();
         }
       }
+
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav ul li a span");
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      };
+
+      $(".chb").change(function () {
+        $(".chb").prop("checked", false);
+        $(this).prop("checked", true);
+      });
     </script>
   </body>
 </html>
