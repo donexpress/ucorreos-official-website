@@ -132,7 +132,7 @@
         font-size: 40px;
       }
       .slider-area .hero-caption-right h2 {
-        font-size: 30px;
+        font-size: 28px;
       }
       .about-area .about-blog .single-offers .icon::before {
         background-color: transparent;
@@ -180,7 +180,10 @@
       }
       .single-details {
         background-color: #1d2547b4;
-        padding: 20px;
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
+        padding-left: 20px;
+        padding-right: 20px;
         width: 40%;
       }
       .sercices-area .properties .properties-card .properties-img {
@@ -195,12 +198,31 @@
       .visit-tailor-area .tailor-details .sinlge-wrapper .single-details {
         width: 45%;
       }
+
+      .visit-tailor-area .tailor-details .sinlge-wrapper .single-details h3 {
+        font-size: 17px;
+      }
+      .slider-area .hero-caption-left h1 {
+        font-size: 46px;
+      }
+      .slider-area .hero-caption-right .icon {
+        margin-top: 28px;
+      }
       @media only screen and (max-width: 900px) {
         .logos_row {
           flex-wrap: wrap;
           width: 100%;
           justify-content: center;
           margin-top: 20px;
+        }
+      }
+
+      @media only screen and (max-width: 1900px) {
+        .visit-tailor-area .tailor-details h2 {
+          margin-bottom: 0;
+        }
+        .visit-tailor-area .tailor-details {
+          height: 470px;
         }
       }
 
@@ -554,6 +576,8 @@
             rgba(23, 88, 152, 1) 34%,
             rgba(0, 169, 231, 1) 100%
           );
+          display: flex;
+          align-items: center;
         "
       >
         <!-- left Contents -->
@@ -567,7 +591,7 @@
           </h2>
           <div class="sinlge-wrapper">
             <div class="single-details">
-              <h3>Soluciones Logística</h3>
+              <h3>Soluciones Logísticas</h3>
               <p>
                 Nuestra misión es brindar soluciones logísticas personalizadas y
                 confiables a otras empresas de logística, plataformas de
@@ -919,12 +943,9 @@
             <div class="row align-items-center justify-content-center">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-11">
                 <div class="section_header">
-                  <div class="section_spacer"></div>
                   <div class="section_text">
-                    <div>Nuestros</div>
-                    <div class="accent">Clientes</div>
+                    <div style="color: #175898; font-size: 25px;"><strong>Nuestros Clientes</strong></div>
                   </div>
-                  <div class="section_spacer"></div>
                 </div>
                 <div class="logos_row">
                   <div style="display: flex">
@@ -997,17 +1018,15 @@
                   <!-- </div> -->
                 </div>
               </div>
+              <div style="width: 100%; height: 1px; background-color: #dedede; margin-top: 100px;"></div>
               <div
                 class="col-xl-12 col-lg-12 col-md-12 col-sm-11"
                 style="margin-top: 100px"
               >
                 <div class="section_header">
-                  <div class="section_spacer"></div>
                   <div class="section_text">
-                    <div>Nuestros</div>
-                    <div class="accent">Partners</div>
+                    <div style="color: #175898; font-size: 25px;"><strong>Nuestros Partners</strong></div>
                   </div>
-                  <div class="section_spacer"></div>
                 </div>
                 <div class="logos_row">
                   <div style="display: flex">
@@ -1123,14 +1142,14 @@
                 </div>
                 <img
                   src="./assets/img/post/technology2.png"
-                  style="height: 454; max-width: 100%;"
+                  style="height: 454px; max-width: 100%;"
                   alt=""
                 />
               </div>
               <div class="col-xl-6 col-lg-6" style="display: flex; flex-direction: column; align-items: flex-end;">
                 <img
                   src="./assets/img/post/technology.png"
-                  style="height: 454; max-width: 100%;"
+                  style="height: 454px; max-width: 100%;"
                   alt=""
                 />
                 <div style="height: 454px; margin-top: 40px">
