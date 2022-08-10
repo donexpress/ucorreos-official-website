@@ -284,6 +284,24 @@
       .slicknav_nav {
         width: calc(100% - 112px);
       }
+      .header-area .menu-wrapper {
+        display: flex;
+        justify-content: space-around !important;
+        flex-direction: column-reverse;
+      }
+      .header-right1 {
+        bottom: -7px;
+      }
+      .tracking_container input[type="text"] {
+        width: 180px;
+        margin-left: 54px;
+      }
+      .mobile_menu .slicknav_menu .slicknav_nav {
+        margin-top: 30px !important;
+      }
+      .slider-area .hero-caption-left {
+        height: 393px;
+      }
       }
       /* Medium devices (landscape tablets, 768px and up) */
       @media only screen and (min-width: 768px) {
@@ -428,16 +446,16 @@
                   <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                   <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
                   <!-- </div> -->
-                  <!-- <div class="tracking_container"> -->
-                  <!--   <input -->
-                  <!--     id="tracking_code" -->
-                  <!--     type="text" -->
-                  <!--     placeholder="Tracking" -->
-                  <!--   /> -->
-                  <!--   <button onclick="search()"> -->
-                  <!--     <img src="./assets/img/icon/search.svg" /> -->
-                  <!--   </button> -->
-                  <!-- </div> -->
+                  <div class="tracking_container">
+                    <input
+                      id="tracking_code"
+                      type="text"
+                      placeholder="Tracking"
+                    />
+                    <button onclick="search()">
+                      <img src="./assets/img/icon/search.svg" />
+                    </button>
+                  </div>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -474,7 +492,7 @@
                       Encuentra la paz interior en el servicio profesional
                     </h1>
                     <!-- Hero-btn -->
-                    <!-- <div
+                    <div
                       class="hero__btn"
                       data-animation="fadeInUp"
                       data-delay=".7s"
@@ -485,7 +503,7 @@
                         class="border-btn hero-btn"
                         >Haga clic para referencia</a
                       >
-                    </div> -->
+                    </div>
                   </div>
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
