@@ -26,14 +26,14 @@
 
 /* 3. slick Nav */
 // mobile_menu
-    var menu = $('ul#navigation');
-    if(menu.length){
-      menu.slicknav({
-        prependTo: ".mobile_menu",
-        closedSymbol: '+',
-        openedSymbol:'-'
-      });
-    };
+    // var menu = $('ul#navigation');
+    // if(menu.length){
+    //   menu.slicknav({
+    //     prependTo: ".mobile_menu",
+    //     closedSymbol: '+',
+    //     openedSymbol:'-'
+    //   });
+    // };
 
 
 
@@ -107,49 +107,49 @@
 
 
 /* 4. Testimonial Active*/
-  var testimonial = $('.h1-testimonial-active');
-  if(testimonial.length){
-  testimonial.slick({
-      dots: false,
-      infinite: true,
-      speed: 1000,
-      autoplay:true,
-      loop:true,
-      arrows: true,
-      prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            arrow:false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:false
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:false,
-          }
-        }
-      ]
-    });
-  }
+  // var testimonial = $('.h1-testimonial-active');
+  // if(testimonial.length){
+  // testimonial.slick({
+  //     dots: false,
+  //     infinite: true,
+  //     speed: 1000,
+  //     autoplay:true,
+  //     loop:true,
+  //     arrows: true,
+  //     prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
+  //     nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     responsive: [
+  //       {
+  //         breakpoint: 1024,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1,
+  //           infinite: true,
+  //           dots: false,
+  //           arrow:false
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 600,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1,
+  //           arrows:false
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 480,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1,
+  //           arrows:false,
+  //         }
+  //       }
+  //     ]
+  //   });
+  // }
 
 
 
@@ -189,19 +189,19 @@
         });
       }
 
-// 12 Pop Up Video
-    var popUp = $('.popup-video');
-    if(popUp.length){
-      popUp.magnificPopup({
-        type: 'iframe'
-      });
-    }
+// // 12 Pop Up Video
+//     var popUp = $('.popup-video');
+//     if(popUp.length){
+//       popUp.magnificPopup({
+//         type: 'iframe'
+//       });
+//     }
 
-/* 13. counterUp*/
-    $('.counter').counterUp({
-      delay: 10,
-      time: 3000
-    });
+// /* 13. counterUp*/
+//     $('.counter').counterUp({
+//       delay: 10,
+//       time: 3000
+//     });
 
 
 
