@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const Services =() => {
     return (
         <section id="services" className="sercices-area section-padding">
@@ -15,7 +17,7 @@ export const Services =() => {
                   <div className="properties-card">
                     <div className="properties-img">
                       <span>
-                        <img src="/img/gallery/services1.jpg" alt="" />
+                        <Image width="436.8px" height="301.65px" src="/img/gallery/services1.jpg" alt="" />
                       </span>
                     </div>
                     <div>
@@ -37,7 +39,7 @@ export const Services =() => {
                   <div className="properties-card">
                     <div className="properties-img">
                       <span
-                      ><img src="/img/gallery/services2.jpg" alt=""
+                      ><Image width="436.8px" height="301.65px" src="/img/gallery/services2.jpg" alt=""
                         /></span>
                     </div>
                     <div>
@@ -58,7 +60,7 @@ export const Services =() => {
                   <div className="properties-card">
                     <div className="properties-img">
                       <span
-                      ><img src="/img/gallery/services3.jpg" alt=""
+                      ><Image width="436.8px" height="301.65px" src="/img/gallery/services3.jpg" alt=""
                         /></span>
                     </div>
                     <div>

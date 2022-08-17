@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const Footer = () => {
     return (
         <footer>
@@ -10,9 +12,10 @@ export const Footer = () => {
                     <div className="single-footer-caption mb-30">
                       <div className="footer-logo mb-35">
                         <a href="index.html"
-                        ><img
+                        ><Image
                             src="/img/logo/logo_image.png"
                             width="93px"
+                            height="21.39px"
                             alt=""
                           /></a>
                       </div>

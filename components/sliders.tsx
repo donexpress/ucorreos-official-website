@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import Image from "next/image";
 export const Sliders = () => {
   
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }: {currentSlide: number, slideCount: number}) => (
@@ -86,7 +87,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }: {currentSlide: 
                     Encuentra la paz interior en el servicio profesional
                     </h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s">
-                    <a href="https://www.31track.com/" target="_blank" className="border-btn hero-btn">
+                    <a href="https://www.31track.com/" target="_blank" rel="noreferrer" className="border-btn hero-btn">
                       Haga clic para referencia
                       </a>
                   </div>
@@ -94,7 +95,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }: {currentSlide: 
               </div>
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
-                  <img className="icon" src="/img/icon/favicon.png" alt="" />
+                  <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
                   <h2 data-animation="fadeInUp" data-delay=".3s">
                     Las soluciones de rastreo de uCorreos muestran el progreso
                     de su envío en cada paso del camino, a través de la ciudad
@@ -116,7 +117,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }: {currentSlide: 
                     Vamos a donde quieras llegar
                     </h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s" >
-                    <a href="https://mailamericas.com/covid-19" target="_blank" className="border-btn hero-btn" >
+                    <a href="https://mailamericas.com/covid-19" target="_blank" rel="noreferrer" className="border-btn hero-btn" >
                       Haga clic para referencia
                       </a>
                   </div>
@@ -124,7 +125,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }: {currentSlide: 
               </div>
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
-                  <img className="icon" src="/img/icon/favicon.png" alt="" />
+                  <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
                   <h2 data-animation="fadeInUp" data-delay=".3s">
                     Brindamos Soluciones alternativas de Cross boarder E
                     commerce, Consolidación y Transporte internacional
@@ -153,7 +154,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }: {currentSlide: 
               </div>
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
-                  <img className="icon" src="/img/icon/favicon.png" alt="" />
+                  <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
                   <h2 data-animation="fadeInUp" data-delay=".3s">
                     Transporte de calidad y excelencia para potenciar su
                     negocio

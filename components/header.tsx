@@ -1,4 +1,5 @@
 import { useState, ChangeEvent } from "react";
+import Image from "next/image";
 
 export const Header = () => {
     const [code, setCode] = useState<string>("");
@@ -25,14 +26,14 @@ export const Header = () => {
                                     <div className="logo">
                                         <div className="logo_gradient">
                                             <a href="index.html">
-                                                <img src="/img/logo/logo_image.png" width="100px" alt="" />
+                                                <Image src="/img/logo/logo_image.png" width="100px" height="23.02px" alt="" />
                                             </a>
                                         </div>
                                     </div>
                                     <div className="logo2">
                                         <div className="logo_gradient">
                                             <a href="index.html">
-                                                <img src="/img/logo/logo_image.png" width="100px" alt="" />
+                                                <Image src="/img/logo/logo_image.png" width="100px" height="23.02px" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -66,8 +67,8 @@ export const Header = () => {
                                     <div className="tracking_container">
                                         <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange}/>
                                         {/*  onclick="search()" */}
-                                        <button onClick={search}>
-                                            <img src="/img/icon/search.svg" />
+                                        <button onClick={search} style={{position: 'relative', top: '6px'}}>
+                                            <Image width="24px" height="24px" alt="search_icon" src="/img/icon/search.svg" />
                                         </button>
                                     </div>
                                 </div>

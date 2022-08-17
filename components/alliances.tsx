@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const Alliances = () => {
     return (
         <section id="aliance" className="testimonial-area section-bg1">
@@ -24,10 +26,12 @@ export const Alliances = () => {
                         href="https://shopee.com/"
                         target="_blank"
                         className="image_link"
+                        rel="noreferrer" 
                       >
-                        <img
+                        <Image
                           src="/img/icon/shopee.svg"
                           width="222px"
+                          height="139.66px"
                           alt=""
                         />
                       </a>
@@ -38,10 +42,12 @@ export const Alliances = () => {
                         href="https://mercadolibre.com/"
                         target="_blank"
                         className="image_link"
+                        rel="noreferrer" 
                       >
-                        <img
+                        <Image
                           src="/img/icon/mercadolibre.png"
                           width="222px"
+                          height="139.66px"
                           alt=""
                         />
                       </a>
@@ -52,8 +58,9 @@ export const Alliances = () => {
                         href="https://es.shopify.com/"
                         target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
-                        <img
+                        <Image
                           src="/img/icon/shopify.png"
                           width="222px"
                           height="48px"
@@ -67,8 +74,9 @@ export const Alliances = () => {
                         href="https://www.linio.com.co/"
                         target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
-                        <img
+                        <Image
                           src="/img/icon/linio.png"
                           width="222px"
                           height="42px"
@@ -95,9 +103,10 @@ export const Alliances = () => {
                         style={{ display: "flex", alignItems: "center" }}
                         className="image_link"
                       >
-                        <img
+                        <Image
                           src="/img/icon/masair.png"
                           width="222px"
+                          height="108px"
                           alt=""
                         />
                       </a>
@@ -108,9 +117,10 @@ export const Alliances = () => {
                         style={{ display: "flex", alignItems: "center" }}
                         className="image_link"
                       >
-                        <img
+                        <Image
                           src="/img/icon/qatar.png"
                           width="222px"
+                          height="116.41px"
                           alt=""
                         />
                       </a>
@@ -121,7 +131,7 @@ export const Alliances = () => {
                         style={{ display: "flex", alignItems: "center" }}
                         className="image_link"
                       >
-                        <img
+                        <Image
                           src="/img/icon/latam.png"
                           width="222px"
                           height="48px"
@@ -135,7 +145,7 @@ export const Alliances = () => {
                         style={{ display: "flex", alignItems: "center" }}
                         className="image_link"
                       >
-                        <img
+                        <Image
                           src="/img/icon/britishairways.png"
                           width="222px"
                           height="42px"
@@ -149,7 +159,7 @@ export const Alliances = () => {
                         style={{ display: "flex", alignItems: "center" }}
                         className="image_link"
                       >
-                        <img
+                        <Image
                           src="/img/icon/31track.svg"
                           width="222px"
                           height="69"

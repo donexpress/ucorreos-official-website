@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const Technologies = () => {
     return (
         <section
@@ -34,18 +36,22 @@ export const Technologies = () => {
                       globalmente, por paquete y envío.
                   </div>
                   </div>
-                  <img
-                    src="/img/post/technology2.png"
-                    style={{ height: "454px", maxWidth: "100%" }}
+                  <div style={{height: '454px', width: '100%', maxWidth: '454px', position: 'relative'}}>
+                  <Image
+                      layout="fill"
+                      src="/img/post/technology2.png"
                     alt=""
                   />
+                  </div>
                 </div>
                 <div className="col-xl-6 col-lg-6" style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-                  <img
-                    src="/img/post/technology.png"
-                    style={{ height: "454px", maxWidth: "100%" }}
-                    alt=""
-                  />
+                  <div style={{height: '454px', width: '100%', maxWidth: '454px', position: 'relative'}}>
+                    <Image
+                      layout="fill"
+                      src="/img/post/technology.png"
+                      alt=""
+                    />
+                  </div>
                   <div style={{ height: "454px", marginTop: "40px" }}>
                     <h1>
                       <strong>Business Intelligence</strong>
