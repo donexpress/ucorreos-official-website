@@ -189,7 +189,7 @@
 .ucorreo_gradient {
   background: linear-gradient(4deg,
       rgba(23, 88, 152, 1) 34%,
-      rgba(0, 169, 231, 1) 100%);
+      rgba(0, 169, 231, 1) 100%) !important;
 }
 .tailor_gradient {
   width: 112px;

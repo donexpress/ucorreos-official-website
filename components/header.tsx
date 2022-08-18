@@ -1,15 +1,17 @@
 import { useState, ChangeEvent } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
     const [code, setCode] = useState<string>("");
+    const { t } = useTranslation();
     const search = () => {
         if (code) {
-          const url = `https://www.31track.com/results?tn[]=${code}`;
-          if(window) {
-            // @ts-ignore
-            window.open(url, "_blank").focus();
-          }
+            const url = `https://www.31track.com/results?tn[]=${code}`;
+            if (window) {
+                // @ts-ignore
+                window.open(url, "_blank").focus();
+            }
         }
     }
     const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
@@ -41,23 +43,23 @@ export const Header = () => {
                                         <nav>
                                             <ul id="navigation">
                                                 <li>
-                                                    <a href="#home"><span className="home">Inicio</span></a>
+                                                    <a href="#home"><span className="home">{t('home') as string}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#services"
-                                                    ><span className="services">Servicio</span></a>
+                                                    ><span className="services">{t('services') as string}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#aliance"
-                                                    ><span className="aliance">Alianzas</span></a>
+                                                    ><span className="aliance">{t('aliance') as string}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#technologies"
-                                                    ><span className="technologies">Tecnologías</span></a>
+                                                    ><span className="technologies">{t('technologies') as string}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#quote"
-                                                    ><span className="quote">Cotizador</span></a>
+                                                    ><span className="quote">{t('quoter') as string}</span></a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -65,9 +67,9 @@ export const Header = () => {
                                 </div>
                                 <div className="header-right1 d-flex align-items-center">
                                     <div className="tracking_container">
-                                        <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange}/>
+                                        <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange} />
                                         {/*  onclick="search()" */}
-                                        <button onClick={search} style={{position: 'relative', top: '6px'}}>
+                                        <button onClick={search} style={{ position: 'relative', top: '6px' }}>
                                             <Image width="24px" height="24px" alt="search_icon" src="/img/icon/search.svg" />
                                         </button>
                                     </div>

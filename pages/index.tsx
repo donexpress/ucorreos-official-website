@@ -7,7 +7,9 @@ import { Services } from '../components/services'
 import { Quoter } from '../components/quoter'
 import { Alliances } from '../components/alliances'
 import { Technologies } from '../components/technologies'
+import { useTranslation } from 'react-i18next'
 const Home: NextPage = () => {
+  const { t } = useTranslation();
 
   return (
     <>
@@ -18,22 +20,15 @@ const Home: NextPage = () => {
         <div className="visit-tailor-area fix tailor_gradient">
           <div className="tailor-details-fader">
             <div className="tailor-details">
-              <h2 style={{ marginBottom: "40px" }}>Le damos el control completo <br />de sus envíos.</h2>
+              <h2 style={{ marginBottom: "40px" }}>{t('full_control_1') as string}<br />{t('full_control_2') as string}</h2>
               <div className="sinlge-wrapper">
                 <div className="single-details" style={{ width: "369px", height: "211px" }}>
-                  <h3>Soluciones Logísticas</h3>
-                  <p>
-                    Nuestra misión es brindar soluciones logísticas personalizadas y
-                    confiables a otras empresas de logística, plataformas de
-                    comercio electrónico y vendedores en línea.
-              </p>
+                  <h3>{t('logistics_solutions') as string}</h3>
+                  <p>{t('logistics_solutions_description') as string}</p>
                 </div>
                 <div className="single-details" style={{ width: "369px", height: "165px" }}>
-                  <h3>Seguridad y confiabilidad</h3>
-                  <p>
-                    El servicio de uCorreos es excepcional. Las soluciones que
-                    ofrecemos son visibilidad, solvencia, confiabilidad.
-              </p>
+                  <h3>{t('security_reliability') as string}</h3>
+                  <p>{t('security_reliability_description') as string}</p>
                 </div>
               </div>
             </div>
