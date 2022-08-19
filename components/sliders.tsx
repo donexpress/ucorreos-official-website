@@ -84,10 +84,10 @@ export const Sliders = () => {
             <div className="row no-gutters align-items-center slider_card_container">
               <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-left ucorreo_gradient">
-                  <h1 data-animation="bounceIn" data-delay=".4s">{t('find_inner_peace') as string}</h1>
+                  <h1 data-animation="bounceIn" data-delay=".4s">{t('find_inner_peace')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s">
                     <a href="https://www.31track.com/" target="_blank" rel="noreferrer" className="border-btn hero-btn">
-                    {t('click_for_reference') as string}
+                    {t('click_for_reference')}
                       </a>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export const Sliders = () => {
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
                   <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
-                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('find_inner_peace_description') as string}</h2>
+                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('find_inner_peace_description')}</h2>
                 </div>
               </div>
             </div>
@@ -108,10 +108,10 @@ export const Sliders = () => {
             <div className="row no-gutters align-items-center slider_card_container">
               <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-left ucorreo_gradient" >
-                  <h1 data-animation="bounceIn" data-delay=".4s">{t('we_go') as string}</h1>
+                  <h1 data-animation="bounceIn" data-delay=".4s">{t('we_go')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s" >
                     <a href="https://mailamericas.com/covid-19" target="_blank" rel="noreferrer" className="border-btn hero-btn" >
-                    {t('click_for_reference') as string}
+                    {t('click_for_reference')}
                       </a>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export const Sliders = () => {
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
                   <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
-                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('we_go_description') as string}</h2>
+                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('we_go_description')}</h2>
                 </div>
               </div>
             </div>
@@ -132,16 +132,16 @@ export const Sliders = () => {
             <div className="row no-gutters align-items-center slider_card_container">
               <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-left ucorreo_gradient" >
-                  <h1 data-animation="bounceIn" data-delay=".4s">{t('keep_business') as string}</h1>
+                  <h1 data-animation="bounceIn" data-delay=".4s">{t('keep_business')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s" >
-                    <a href="#services" className="border-btn hero-btn" >{t('click_for_reference') as string}</a>
+                    <a href="#services" className="border-btn hero-btn" >{t('click_for_reference')}</a>
                   </div>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                 <div className="hero-caption-right">
                   <Image width="49px" height="49px" className="icon" src="/img/icon/favicon.png" alt="" />
-                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('keep_business_description') as string}</h2>
+                  <h2 data-animation="fadeInUp" data-delay=".3s">{t('keep_business_description')}</h2>
                 </div>
               </div>
             </div>

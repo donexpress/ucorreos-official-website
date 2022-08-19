@@ -15,7 +15,7 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import Head from 'next/head'
-import './_i18n';
+import '../components/i18n';
 
 
 function MyApp({ Component, pageProps }: AppProps) {

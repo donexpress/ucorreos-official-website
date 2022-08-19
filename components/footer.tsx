@@ -32,7 +32,7 @@ export const Footer = () => {
                           className="footer-pera col-xl-9 col-lg-9 col-md-9 col-sm-9"
                         >
                           <p>
-                          {t('address_text') as string}
+                          {t('address_text')}
                         </p>
                         </div>
                       </div>
@@ -44,12 +44,12 @@ export const Footer = () => {
                 >
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>{t('links') as string}</h4>
+                      <h4>{t('links')}</h4>
                       <ul>
-                        <li><a href="#services">{t('services') as string}</a></li>
-                        <li><a href="#aliance">{t('aliance') as string}</a></li>
-                        <li><a href="#technologies">{t('technologies') as string}</a></li>
-                        <li><a href="#quote">{t('quoter') as string}</a></li>
+                        <li><a href="#services">{t('services')}</a></li>
+                        <li><a href="#aliance">{t('aliance')}</a></li>
+                        <li><a href="#technologies">{t('technologies')}</a></li>
+                        <li><a href="#quote">{t('quoter')}</a></li>
                       </ul>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export const Footer = () => {
                 <div className="row d-flex align-items-center">
                   <div className="col-xl-12">
                     <div className="footer-copy-right text-center text-white">
-                      Copyright &copy; {new Date().getFullYear()} {t('all_rights_reserved') as string}
+                      Copyright &copy; {new Date().getFullYear()} {t('all_rights_reserved')}
                   </div>
                   </div>
                 </div>

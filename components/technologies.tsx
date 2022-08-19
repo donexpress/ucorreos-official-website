@@ -14,7 +14,7 @@ export const Technologies = () => {
           <div className="row mb-50">
             <div className="col-lg-12">
               <div className="section-tittle text-center mb-50">
-                <h2>{t('technologies') as string}</h2>
+                <h2>{t('technologies')}</h2>
               </div>
             </div>
           </div>
@@ -22,11 +22,11 @@ export const Technologies = () => {
             <div className="col-xl-6 col-lg-6">
               <div style={{ height: "454px", marginBottom: "40px" }}>
                 <h1>
-                  <strong>{t('cutting_edge_technology') as string}</strong>
+                  <strong>{t('cutting_edge_technology')}</strong>
                 </h1>
-                <h4 style={{ marginTop: "20px", color: "rgb(23, 88, 152)" }}><strong>{t('cutting_edge_technology_subtitle') as string}</strong></h4>
-                <div style={{ marginTop: "40px", textAlign: "justify", fontWeight: 600 }}>{t('cutting_edge_technology_description_1') as string}</div>
-                <div style={{ marginTop: "20px", textAlign: "justify", fontWeight: 600 }}>{t('cutting_edge_technology_description_2') as string}</div>
+                <h4 style={{ marginTop: "20px", color: "rgb(23, 88, 152)" }}><strong>{t('cutting_edge_technology_subtitle')}</strong></h4>
+                <div style={{ marginTop: "40px", textAlign: "justify", fontWeight: 600 }}>{t('cutting_edge_technology_description_1')}</div>
+                <div style={{ marginTop: "20px", textAlign: "justify", fontWeight: 600 }}>{t('cutting_edge_technology_description_2')}</div>
               </div>
               <div style={{ height: '454px', width: '100%', maxWidth: '454px', position: 'relative' }}>
                 <Image
@@ -46,14 +46,14 @@ export const Technologies = () => {
               </div>
               <div style={{ height: "454px", marginTop: "40px" }}>
                 <h1>
-                  <strong>{t('business_intelligence') as string}</strong>
+                  <strong>{t('business_intelligence')}</strong>
                 </h1>
-                <h4 style={{ marginTop: "20px", color: "rgb(23, 88, 152)" }}><strong>{t('business_intelligence_subtitle') as string}</strong></h4>
+                <h4 style={{ marginTop: "20px", color: "rgb(23, 88, 152)" }}><strong>{t('business_intelligence_subtitle')}</strong></h4>
                 <div style={{ marginTop: "40px", textAlign: "justify", fontWeight: 600 }}>
-                {t('business_intelligence_description_1') as string}
+                {t('business_intelligence_description_1')}
                   </div>
                 <div style={{ marginTop: "20px", textAlign: "justify", fontWeight: 600 }}>
-                {t('business_intelligence_description_2') as string}
+                {t('business_intelligence_description_2')}
                   </div>
               </div>
             </div>

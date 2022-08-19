@@ -43,23 +43,23 @@ export const Header = () => {
                                         <nav>
                                             <ul id="navigation">
                                                 <li>
-                                                    <a href="#home"><span className="home">{t('home') as string}</span></a>
+                                                    <a href="#home"><span className="home">{t('home')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#services"
-                                                    ><span className="services">{t('services') as string}</span></a>
+                                                    ><span className="services">{t('services')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#aliance"
-                                                    ><span className="aliance">{t('aliance') as string}</span></a>
+                                                    ><span className="aliance">{t('aliance')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#technologies"
-                                                    ><span className="technologies">{t('technologies') as string}</span></a>
+                                                    ><span className="technologies">{t('technologies')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#quote"
-                                                    ><span className="quote">{t('quoter') as string}</span></a>
+                                                    ><span className="quote">{t('quoter')}</span></a>
                                                 </li>
                                             </ul>
                                         </nav>

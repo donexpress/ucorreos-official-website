@@ -10,7 +10,7 @@ export const Alliances = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-tittle text-center mb-50">
-                    <h2>{t('aliance') as string}</h2>
+                    <h2>{t('aliance')}</h2>
                   </div>
                 </div>
               </div>
@@ -18,7 +18,7 @@ export const Alliances = () => {
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-11">
                   <div className="section_header">
                     <div className="section_text">
-                      <div style={{ color: "#175898", fontSize: "25px" }}><strong>{t('our_clients') as string}</strong></div>
+                      <div style={{ color: "#175898", fontSize: "25px" }}><strong>{t('our_clients')}</strong></div>
                     </div>
                   </div>
                   <div className="logos_row">
@@ -95,7 +95,7 @@ export const Alliances = () => {
                 >
                   <div className="section_header">
                     <div className="section_text">
-                      <div style={{ color: "#175898", fontSize: "25px" }}><strong>{t('our_partners') as string}</strong></div>
+                      <div style={{ color: "#175898", fontSize: "25px" }}><strong>{t('our_partners')}</strong></div>
                     </div>
                   </div>
                   <div className="logos_row">

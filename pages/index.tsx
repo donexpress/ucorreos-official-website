@@ -20,15 +20,15 @@ const Home: NextPage = () => {
         <div className="visit-tailor-area fix tailor_gradient">
           <div className="tailor-details-fader">
             <div className="tailor-details">
-              <h2 style={{ marginBottom: "40px" }}>{t('full_control_1') as string}<br />{t('full_control_2') as string}</h2>
+              <h2 style={{ marginBottom: "40px" }}>{t('full_control_1')}<br />{t('full_control_2')}</h2>
               <div className="sinlge-wrapper">
                 <div className="single-details" style={{ width: "369px", height: "211px" }}>
-                  <h3>{t('logistics_solutions') as string}</h3>
-                  <p>{t('logistics_solutions_description') as string}</p>
+                  <h3>{t('logistics_solutions')}</h3>
+                  <p>{t('logistics_solutions_description')}</p>
                 </div>
                 <div className="single-details" style={{ width: "369px", height: "165px" }}>
-                  <h3>{t('security_reliability') as string}</h3>
-                  <p>{t('security_reliability_description') as string}</p>
+                  <h3>{t('security_reliability')}</h3>
+                  <p>{t('security_reliability_description')}</p>
                 </div>
               </div>
             </div>

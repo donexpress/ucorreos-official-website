@@ -32,9 +32,9 @@ export const Quoter = () => {
           <div className="col-xl-4 col-lg-5">
             <div className="contact-caption">
               <div className="section-tittle section-tittle3">
-                <h2>{t('quoter') as string}</h2>
+                <h2>{t('quoter')}</h2>
                 <p style={{ color: "#1d2547", fontWeight: 700 }}>
-                  {t('quoter_description') as string}
+                  {t('quoter_description')}
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export const Quoter = () => {
                 <div className="row">
                   <div className="select-Categories">
                     <label className="containers">
-                      {t('maritime') as string}
+                      {t('maritime')}
                       <input
                         id="shipmentType"
                         value="sea"
@@ -61,7 +61,7 @@ export const Quoter = () => {
                       <span className="checkmark form_background_color"></span>
                     </label>
                     <label className="containers">
-                      {t('aerial') as string}
+                      {t('aerial')}
                       <input
                         id="shipmentType"
                         type="checkbox"
@@ -73,7 +73,7 @@ export const Quoter = () => {
                       <span className="checkmark form_background_color"></span>
                     </label>
                     <label className="containers">
-                      {t('land') as string}
+                      {t('land')}
                       <input
                         id="shipmentType"
                         type="checkbox"
@@ -88,7 +88,7 @@ export const Quoter = () => {
 
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('fullname') as string} *</label>
+                      <label>{t('fullname')} *</label>
                       <input
                         type="text"
                         id="name"
@@ -101,7 +101,7 @@ export const Quoter = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('weight_volume') as string}</label>
+                      <label>{t('weight_volume')}</label>
                       <input
                         value={weight}
                         onChange={(evt) => setWeight(evt.target.value)}
@@ -113,7 +113,7 @@ export const Quoter = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('email') as string} *</label>
+                      <label>{t('email')} *</label>
                       <input
                         type="email"
                         value={email}
@@ -126,7 +126,7 @@ export const Quoter = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('phone_number') as string} *</label>
+                      <label>{t('phone_number')} *</label>
                       <input
                         type="text"
                         value={phoneNumber}
@@ -139,7 +139,7 @@ export const Quoter = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('country_of_origin') as string} *</label>
+                      <label>{t('country_of_origin')} *</label>
                       <input
                         type="text"
                         value={originCountry}
@@ -152,7 +152,7 @@ export const Quoter = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="input-form">
-                      <label>{t('destination_country') as string} *</label>
+                      <label>{t('destination_country')} *</label>
                       <input
                         type="text"
                         id="destination_country"
@@ -166,7 +166,7 @@ export const Quoter = () => {
 
                   <div className="col-lg-12">
                     <button name="submit" onClick={quote} className="submit-btn2" style={{ backgroundColor: "#00a9e7" }}>
-                      {t('quote') as string}
+                      {t('quote')}
                     </button>
                   </div>
                 </div>

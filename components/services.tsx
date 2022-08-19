@@ -9,7 +9,7 @@ export const Services = () => {
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-8 col-sm-11">
             <div className="section-tittle text-center mb-60">
-              <h2>{t('our_services') as string}</h2>
+              <h2>{t('our_services')}</h2>
             </div>
           </div>
         </div>
@@ -25,9 +25,9 @@ export const Services = () => {
                 <div>
                   <h3>
                     <p className="service_card_number">01</p>
-                    <span className="service_card_header">{t('ecommerce_solutions') as string}</span>
+                    <span className="service_card_header">{t('ecommerce_solutions')}</span>
                   </h3>
-                  <p>{t('ecommerce_description') as string}</p>
+                  <p>{t('ecommerce_description')}</p>
                 </div>
               </div>
             </div>
@@ -43,9 +43,9 @@ export const Services = () => {
                 <div>
                   <h3>
                     <p className="service_card_number">02</p>
-                    <span className="service_card_header">{t('air_and_sea_conveyance') as string}</span>
+                    <span className="service_card_header">{t('air_and_sea_conveyance')}</span>
                   </h3>
-                  <p>{t('air_and_sea_conveyance_description') as string}</p>
+                  <p>{t('air_and_sea_conveyance_description')}</p>
                 </div>
               </div>
             </div>
@@ -61,9 +61,9 @@ export const Services = () => {
                 <div>
                   <h3>
                     <p className="service_card_number">03</p>
-                    <span className="service_card_header">{t('warehouse_service') as string}</span>
+                    <span className="service_card_header">{t('warehouse_service')}</span>
                   </h3>
-                  <p>{t('warehouse_service_description') as string}</p>
+                  <p>{t('warehouse_service_description')}</p>
                 </div>
               </div>
             </div>
