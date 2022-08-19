@@ -1,6 +1,8 @@
 import { useState, ChangeEvent } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import ReactCountryFlag from "react-country-flag"
+import i18n from "./i18n";
 
 export const Header = () => {
     const [code, setCode] = useState<string>("");
@@ -66,6 +68,30 @@ export const Header = () => {
                                     </div>
                                 </div>
                                 <div className="header-right1 d-flex align-items-center">
+                                    <div className="laguage_container">
+                                        <ReactCountryFlag
+                                            countryCode="US"
+                                            className="country_flag"
+                                            svg
+                                            style={{
+                                                width: '2em',
+                                                height: '2em',
+                                            }}
+                                            title="US"
+                                            onClick={()=>i18n.changeLanguage('en')}
+                                        />
+                                        <ReactCountryFlag
+                                            className="country_flag"
+                                            countryCode="ES"
+                                            svg
+                                            style={{
+                                                width: '2em',
+                                                height: '2em',
+                                            }}
+                                            title="ES"
+                                            onClick={()=>i18n.changeLanguage('es')}
+                                        />
+                                    </div>
                                     <div className="tracking_container">
                                         <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange} />
                                         {/*  onclick="search()" */}

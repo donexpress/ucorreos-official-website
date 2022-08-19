@@ -214,6 +214,19 @@
 .form_background_color {
   background-color: #175898
 }
+
+.laguage_container {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-right: 30px;
+  height: 30px;
+  align-items: center;
+}
+.country_flag:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0 #d9d9d9, 0 6px 20px 0 #d9d9d9;
+}
 @media only screen and (max-width: 900px) {
   .logos_row {
     flex-wrap: wrap;
@@ -291,13 +304,20 @@
 }
 .tracking_container input[type="text"] {
   width: 180px;
-  margin-left: 54px;
+  margin-left: 0px;
 }
 .mobile_menu .slicknav_menu .slicknav_nav {
   margin-top: 30px !important;
 }
 .slider-area .hero-caption-left {
   height: 393px;
+}
+.laguage_container {
+  width: 72px;
+  margin-right: 10px;
+}
+.header-right1 {
+  margin-right: -108px;
 }
 }
 /* Medium devices (landscape tablets, 768px and up) */
