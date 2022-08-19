@@ -3,9 +3,11 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag"
 import i18n from "./i18n";
+import { changeLanguage } from "i18next";
 
 export const Header = () => {
     const [code, setCode] = useState<string>("");
+    const [selectedLanguague, setSelectedLanguague] = useState<string>("ES")
     const { t } = useTranslation();
     const search = () => {
         if (code) {
@@ -18,6 +20,10 @@ export const Header = () => {
     }
     const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
         setCode(evt.target.value)
+    }
+    const changeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang);
+        setSelectedLanguague(lang === 'es'? 'ES' : 'US')
     }
     return (
         <header>
@@ -68,29 +74,49 @@ export const Header = () => {
                                     </div>
                                 </div>
                                 <div className="header-right1 d-flex align-items-center">
-                                    <div className="laguage_container">
-                                        <ReactCountryFlag
-                                            countryCode="US"
-                                            className="country_flag"
-                                            svg
-                                            style={{
-                                                width: '2em',
-                                                height: '2em',
-                                            }}
-                                            title="US"
-                                            onClick={()=>i18n.changeLanguage('en')}
-                                        />
-                                        <ReactCountryFlag
-                                            className="country_flag"
-                                            countryCode="ES"
-                                            svg
-                                            style={{
-                                                width: '2em',
-                                                height: '2em',
-                                            }}
-                                            title="ES"
-                                            onClick={()=>i18n.changeLanguage('es')}
-                                        />
+                                    <div className="dropdown">
+                                        <button className="dropbtn">
+                                            <ReactCountryFlag
+                                                countryCode={selectedLanguague}
+                                                className="country_flag"
+                                                svg
+                                                style={{
+                                                    width: '2em',
+                                                    height: '2em',
+                                                }}
+                                                title={selectedLanguague}
+                                            />
+                                        </button>
+                                        <div className="dropdown-content">
+                                            <div>
+                                                <ReactCountryFlag
+                                                    countryCode="US"
+                                                    className="country_flag"
+                                                    svg
+                                                    style={{
+                                                        width: '2em',
+                                                        height: '2em',
+                                                    }}
+                                                    title="US"
+                                                    onClick={() => changeLanguage('en')}
+                                                />
+                                                <span className="language_text">English</span>
+                                            </div>
+                                            <div>
+                                                <ReactCountryFlag
+                                                    className="country_flag"
+                                                    countryCode="ES"
+                                                    svg
+                                                    style={{
+                                                        width: '2em',
+                                                        height: '2em',
+                                                    }}
+                                                    title="ES"
+                                                    onClick={() => changeLanguage('es')}
+                                                />
+                                                <span className="language_text">Español</span>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="tracking_container">
                                         <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange} />
