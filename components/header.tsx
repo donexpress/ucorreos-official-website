@@ -1,19 +1,29 @@
 import { useState, ChangeEvent } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
+import ReactCountryFlag from "react-country-flag"
+import i18n from "./i18n";
+import { changeLanguage } from "i18next";
 
 export const Header = () => {
     const [code, setCode] = useState<string>("");
+    const [selectedLanguague, setSelectedLanguague] = useState<string>("ES")
+    const { t } = useTranslation();
     const search = () => {
         if (code) {
-          const url = `https://www.31track.com/results?tn[]=${code}`;
-          if(window) {
-            // @ts-ignore
-            window.open(url, "_blank").focus();
-          }
+            const url = `https://www.31track.com/results?tn[]=${code}`;
+            if (window) {
+                // @ts-ignore
+                window.open(url, "_blank").focus();
+            }
         }
     }
     const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
         setCode(evt.target.value)
+    }
+    const changeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang);
+        setSelectedLanguague(lang === 'es'? 'ES' : 'US')
     }
     return (
         <header>
@@ -41,33 +51,77 @@ export const Header = () => {
                                         <nav>
                                             <ul id="navigation">
                                                 <li>
-                                                    <a href="#home"><span className="home">Inicio</span></a>
+                                                    <a href="#home"><span className="home">{t('home')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#services"
-                                                    ><span className="services">Servicio</span></a>
+                                                    ><span className="services">{t('services')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#aliance"
-                                                    ><span className="aliance">Alianzas</span></a>
+                                                    ><span className="aliance">{t('aliance')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#technologies"
-                                                    ><span className="technologies">Tecnologías</span></a>
+                                                    ><span className="technologies">{t('technologies')}</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#quote"
-                                                    ><span className="quote">Cotizador</span></a>
+                                                    ><span className="quote">{t('quoter')}</span></a>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
                                 <div className="header-right1 d-flex align-items-center">
+                                    <div className="dropdown">
+                                        <button className="dropbtn">
+                                            <ReactCountryFlag
+                                                countryCode={selectedLanguague}
+                                                className="country_flag"
+                                                svg
+                                                style={{
+                                                    width: '2em',
+                                                    height: '2em',
+                                                }}
+                                                title={selectedLanguague}
+                                            />
+                                        </button>
+                                        <div className="dropdown-content">
+                                            <div>
+                                                <ReactCountryFlag
+                                                    countryCode="US"
+                                                    className="country_flag"
+                                                    svg
+                                                    style={{
+                                                        width: '2em',
+                                                        height: '2em',
+                                                    }}
+                                                    title="US"
+                                                    onClick={() => changeLanguage('en')}
+                                                />
+                                                <span className="language_text">English</span>
+                                            </div>
+                                            <div>
+                                                <ReactCountryFlag
+                                                    className="country_flag"
+                                                    countryCode="ES"
+                                                    svg
+                                                    style={{
+                                                        width: '2em',
+                                                        height: '2em',
+                                                    }}
+                                                    title="ES"
+                                                    onClick={() => changeLanguage('es')}
+                                                />
+                                                <span className="language_text">Español</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div className="tracking_container">
-                                        <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange}/>
+                                        <input id="tracking_code" type="text" placeholder="Tracking" value={code} onChange={onChange} />
                                         {/*  onclick="search()" */}
-                                        <button onClick={search} style={{position: 'relative', top: '6px'}}>
+                                        <button onClick={search} style={{ position: 'relative', top: '6px' }}>
                                             <Image width="24px" height="24px" alt="search_icon" src="/img/icon/search.svg" />
                                         </button>
                                     </div>

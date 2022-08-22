@@ -15,6 +15,8 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import Head from 'next/head'
+import '../components/i18n';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -27,13 +29,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     <link rel="shortcut icon" href="/img/icon/favicon.png" />
     </Head>
       <Component {...pageProps} />
-      <Script src="/js/vendor/modernizr-3.5.0.min.js"/>
+      {/* <Script src="/js/vendor/modernizr-3.5.0.min.js"/>
       <Script src="/js/vendor/jquery-1.12.4.min.js"/>
-      <Script src="/js/popper.min.js"/>
+      <Script src="/js/popper.min.js"/> */}
       <Script src="/js/bootstrap.min.js"/>
 
       <Script src="/js/owl.carousel.min.js"/>
-      
+{/*       
       <Script src="/js/wow.min.js"/>
       <Script src="/js/jquery.magnific-popup.js"/>
       <Script src="/js/jquery.nice-select.min.js"/>
@@ -44,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script src="/js/mail-script.js"/>
       <Script src="/js/jquery.ajaxchimp.min.js"/>
 
-      <Script src="/js/plugins.js"/>
+      <Script src="/js/plugins.js"/> */}
       <Script src="/js/main.js"/>
 
 
