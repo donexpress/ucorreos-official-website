@@ -323,6 +323,10 @@ a {
   text-decoration: none;
 }
 
+.cursor_pointer {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
   .logos_row {
     flex-wrap: wrap;

@@ -30,7 +30,7 @@ export const Header = () => {
                 <div className="main-header header-sticky" style={{width: '100%'}}>
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="menu-wrapper align-items-center justify-content-between">
+                            <div className="menu-wrapper align-items-center justify-content-between" style={{height: '80px'}}>
                                 <div className="header-left d-flex align-items-center">
                                     <div className="logo">
                                         <div className="logo_gradient">
@@ -87,7 +87,7 @@ export const Header = () => {
                                             />
                                         </button>
                                         <div className="dropdown-content">
-                                            <div>
+                                            <div className="cursor_pointer" onClick={() => changeLanguage('en')}>
                                                 <ReactCountryFlag
                                                     countryCode="US"
                                                     className="country_flag"
@@ -97,11 +97,10 @@ export const Header = () => {
                                                         height: '2em',
                                                     }}
                                                     title="US"
-                                                    onClick={() => changeLanguage('en')}
                                                 />
                                                 <span className="language_text">English</span>
                                             </div>
-                                            <div>
+                                            <div className="cursor_pointer" onClick={() => changeLanguage('es')}>
                                                 <ReactCountryFlag
                                                     className="country_flag"
                                                     countryCode="ES"
