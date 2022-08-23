@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
-
+import logo from '../public/img/logo/logo_image.png'
 export const Footer = () => {
     const { t } = useTranslation();
     return (
@@ -15,7 +15,7 @@ export const Footer = () => {
                       <div className="footer-logo mb-35">
                         <a href="index.html"
                         ><Image
-                            src="/img/logo/logo_image.png"
+                            src={logo}
                             width="93px"
                             height="21.39px"
                             alt=""
@@ -45,7 +45,7 @@ export const Footer = () => {
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
                       <h4>{t('links')}</h4>
-                      <ul>
+                      <ul style={{paddingLeft: '0px'}}>
                         <li><a href="#services">{t('services')}</a></li>
                         <li><a href="#aliance">{t('aliance')}</a></li>
                         <li><a href="#technologies">{t('technologies')}</a></li>

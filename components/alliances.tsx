@@ -1,5 +1,14 @@
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
+import shopee from '../public/img/icon/shopee.svg';
+import mercadoLibre from '../public/img/icon/mercadolibre.png';
+import shopify from '../public/img/icon/shopify.png';
+import linio from '../public/img/icon/linio.png';
+import masair from '../public/img/icon/masair.png';
+import qatar from '../public/img/icon/qatar.png';
+import latam from '../public/img/icon/latam.png';
+import britishAirways from '../public/img/icon/britishairways.png';
+import track from '../public/img/icon/31track.svg';
 
 export const Alliances = () => {
     const { t } = useTranslation();
@@ -31,7 +40,7 @@ export const Alliances = () => {
                         rel="noreferrer" 
                       >
                         <Image
-                          src="/img/icon/shopee.svg"
+                          src={shopee}
                           width="222px"
                           height="139.66px"
                           alt=""
@@ -47,7 +56,7 @@ export const Alliances = () => {
                         rel="noreferrer" 
                       >
                         <Image
-                          src="/img/icon/mercadolibre.png"
+                          src={mercadoLibre}
                           width="222px"
                           height="139.66px"
                           alt=""
@@ -63,23 +72,23 @@ export const Alliances = () => {
                         rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/shopify.png"
+                          src={shopify}
                           width="222px"
                           height="48px"
                           alt=""
                         />
                       </a>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", marginTop: "57px" }}>
+                    <div style={{ display: "flex", alignItems: "center"}}>
                       <a
                         style={{ display: "flex" }}
-                        href="https://www.linio.com.co/"
+                        href="https://www.linio.com"
                         target="_blank"
                         className="image_link"
                         rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/linio.png"
+                          src={linio}
                           width="222px"
                           height="42px"
                           alt=""
@@ -103,10 +112,12 @@ export const Alliances = () => {
                       <a
                         href="https://www.masair.com/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/masair.png"
+                          src={masair}
                           width="222px"
                           height="108px"
                           alt=""
@@ -117,10 +128,12 @@ export const Alliances = () => {
                       <a
                         href="https://www.qatarairways.com/en/homepage.html"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/qatar.png"
+                          src={qatar}
                           width="222px"
                           height="116.41px"
                           alt=""
@@ -131,10 +144,12 @@ export const Alliances = () => {
                       <a
                         href="https://www.latamairlines.com/cl/es"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/latam.png"
+                          src={latam}
                           width="222px"
                           height="48px"
                           alt=""
@@ -145,10 +160,12 @@ export const Alliances = () => {
                       <a
                         href="https://www.britishairways.com/travel/home/public/es_es/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/britishairways.png"
+                          src={britishAirways}
                           width="222px"
                           height="42px"
                           alt=""
@@ -159,10 +176,12 @@ export const Alliances = () => {
                       <a
                         href="https://www.31track.com/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
-                          src="/img/icon/31track.svg"
+                          src={track}
                           width="222px"
                           height="69"
                           alt=""

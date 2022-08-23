@@ -41,7 +41,7 @@ const Home: NextPage = () => {
       </main>
       <Footer />
       <div id="back-top" style={{ backgroundColor: "#00a9e7" }}>
-        <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt"></i></a>
+        <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt" style={{color: '#fff'}}></i></a>
       </div>
     </>
   )

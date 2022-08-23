@@ -76,10 +76,7 @@ export const Sliders = () => {
   return (
     <div id="home" className="slider-area">
       <Slider className="slider-active" {...settings}>
-        {/* <div className="slider-active" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'> */}
-        <div
-          className="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg1"
-        >
+        <div className="slider-height d-flex align-items-center slider-bg1">
           <div className="container slider_card">
             <div className="row no-gutters align-items-center slider_card_container">
               <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6">
@@ -87,8 +84,8 @@ export const Sliders = () => {
                   <h1 data-animation="bounceIn" data-delay=".4s">{t('find_inner_peace')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s">
                     <a href="https://www.31track.com/" target="_blank" rel="noreferrer" className="border-btn hero-btn">
-                    {t('click_for_reference')}
-                      </a>
+                      {t('click_for_reference')}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -102,7 +99,7 @@ export const Sliders = () => {
           </div>
         </div>
         <div
-          className="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg2"
+          className="slider-height d-flex align-items-center slider-bg2"
         >
           <div className="container slider_card">
             <div className="row no-gutters align-items-center slider_card_container">
@@ -111,8 +108,8 @@ export const Sliders = () => {
                   <h1 data-animation="bounceIn" data-delay=".4s">{t('we_go')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s" >
                     <a href="https://mailamericas.com/covid-19" target="_blank" rel="noreferrer" className="border-btn hero-btn" >
-                    {t('click_for_reference')}
-                      </a>
+                      {t('click_for_reference')}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -126,7 +123,7 @@ export const Sliders = () => {
           </div>
         </div>
         <div
-          className="single-slider hero-overly1 slider-height d-flex align-items-center slider-bg3"
+          className="slider-height d-flex align-items-center slider-bg3"
         >
           <div className="container slider_card">
             <div className="row no-gutters align-items-center slider_card_container">

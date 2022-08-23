@@ -1,5 +1,7 @@
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
+import experience from '../public/img/elements/experience.png';
+import serviceLevel from '../public/img/elements/serviceLevel.png';
 
 export const Solutions = () => {
   const { t } = useTranslation();
@@ -20,8 +22,8 @@ export const Solutions = () => {
           <div className="offset-xl-1 col-xl-7 col-lg-6 7ol-md-10">
             <div className="about-blog">
               <div className="single-offers d-flex mb-20" style={{ boxShadow: "4px 4px 8px 0 #d9d9d9, 0 6px 20px 0 #d9d9d9" }}>
-                <div className="icon" style={{ marginTop: "45px", width: '130px', height: '100px' }} >
-                  <Image width="130px" height="100px" src="/img/elements/experience.png" alt="this icon" className="icon-border" />
+                <div className="icon" style={{ marginTop: "45px", width: '130px', height: '100px', marginLeft: '20px' }} >
+                  <Image layout="fixed" width="130px" height="100px" src={experience} alt="this icon" className="icon-border" />
                 </div>
                 <div className="offers-cap" style={{ width: '736px' }}>
                   <h3><a href="#">{t('wide_experience')}</a></h3>
@@ -29,8 +31,8 @@ export const Solutions = () => {
                 </div>
               </div>
               <div className="single-offers d-flex mb-20" style={{ boxShadow: "4px 4px 8px 0 #d9d9d9, 0 6px 20px 0 #d9d9d9" }}>
-                <div className="icon" style={{ width: '130px', height: '100px' }}>
-                  <Image layout="fill" src="/img/elements/serviceLevel.png" alt="this icon" className="icon-border" />
+                <div className="icon" style={{ width: '130px', height: '100px', marginLeft: '20px' }}>
+                  <Image layout="fixed" width="130px" height="100px" src={serviceLevel} alt="this icon" className="icon-border" />
                 </div>
                 <div className="offers-cap">
                   <h3><a href="#">{t('service_levels')}</a></h3>

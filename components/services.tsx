@@ -1,5 +1,8 @@
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
+import service1 from '../public/img/gallery/services1.jpg';
+import service2 from '../public/img/gallery/services2.jpg';
+import service3 from '../public/img/gallery/services3.jpg';
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -19,7 +22,7 @@ export const Services = () => {
               <div className="properties-card">
                 <div className="properties-img">
                   <span>
-                    <Image width="436.8px" height="301.65px" src="/img/gallery/services1.jpg" alt="" />
+                    <Image width="436.8px" height="301.65px" src={service1} alt="" />
                   </span>
                 </div>
                 <div>
@@ -37,7 +40,7 @@ export const Services = () => {
               <div className="properties-card">
                 <div className="properties-img">
                   <span
-                  ><Image width="436.8px" height="301.65px" src="/img/gallery/services2.jpg" alt=""
+                  ><Image width="436.8px" height="301.65px" src={service2} alt=""
                     /></span>
                 </div>
                 <div>
@@ -55,7 +58,7 @@ export const Services = () => {
               <div className="properties-card">
                 <div className="properties-img">
                   <span
-                  ><Image width="436.8px" height="301.65px" src="/img/gallery/services3.jpg" alt=""
+                  ><Image width="436.8px" height="301.65px" src={service3} alt=""
                     /></span>
                 </div>
                 <div>

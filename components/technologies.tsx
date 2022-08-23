@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
-
+import technology2 from '../public/img/post/technology2.png'
+import technology from '../public/img/post/technology.png'
 export const Technologies = () => {
   const { t } = useTranslation();
   return (
@@ -31,7 +32,7 @@ export const Technologies = () => {
               <div style={{ height: '454px', width: '100%', maxWidth: '454px', position: 'relative' }}>
                 <Image
                   layout="fill"
-                  src="/img/post/technology2.png"
+                  src={technology2}
                   alt=""
                 />
               </div>
@@ -40,7 +41,7 @@ export const Technologies = () => {
               <div style={{ height: '454px', width: '100%', maxWidth: '454px', position: 'relative' }}>
                 <Image
                   layout="fill"
-                  src="/img/post/technology.png"
+                  src={technology}
                   alt=""
                 />
               </div>
