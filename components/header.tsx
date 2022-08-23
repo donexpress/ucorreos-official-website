@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, useEffect } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag"
@@ -22,15 +22,36 @@ export const Header = () => {
     }
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
-        setSelectedLanguague(lang === 'es'? 'ES' : 'US')
+        setSelectedLanguague(lang === 'es' ? 'ES' : 'US')
     }
+    useEffect(() => {
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll("nav ul li a span");
+        window.onscroll = () => {
+            let current: string | null = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 60) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLi.forEach((li) => {
+                li.classList.remove("active");
+                if (li.classList.contains(current || "")) {
+                    li.classList.add("active");
+                }
+            });
+        };
+    })
     return (
         <header>
             <div id="home" className="header-area">
-                <div className="main-header header-sticky" style={{width: '100%'}}>
+                <div className="main-header header-sticky" style={{ width: '100%' }}>
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="menu-wrapper align-items-center justify-content-between" style={{height: '80px'}}>
+                            <div className="menu-wrapper align-items-center justify-content-between" style={{ height: '80px' }}>
                                 <div className="header-left d-flex align-items-center">
                                     <div className="logo">
                                         <div className="logo_gradient">
@@ -46,7 +67,7 @@ export const Header = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="main-menu d-none d-lg-block" style={{height: '80px', position: 'absolute', left: '135px'}}>
+                                    <div className="main-menu d-none d-lg-block" style={{ height: '80px', position: 'absolute', left: '135px' }}>
                                         <nav>
                                             <ul id="navigation">
                                                 <li>
