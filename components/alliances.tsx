@@ -82,7 +82,7 @@ export const Alliances = () => {
                     <div style={{ display: "flex", alignItems: "center"}}>
                       <a
                         style={{ display: "flex" }}
-                        href="https://www.linio.com.co/"
+                        href="https://www.linio.com"
                         target="_blank"
                         className="image_link"
                         rel="noreferrer"
@@ -112,7 +112,9 @@ export const Alliances = () => {
                       <a
                         href="https://www.masair.com/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
                           src={masair}
@@ -126,7 +128,9 @@ export const Alliances = () => {
                       <a
                         href="https://www.qatarairways.com/en/homepage.html"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
                           src={qatar}
@@ -140,7 +144,9 @@ export const Alliances = () => {
                       <a
                         href="https://www.latamairlines.com/cl/es"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
                           src={latam}
@@ -154,7 +160,9 @@ export const Alliances = () => {
                       <a
                         href="https://www.britishairways.com/travel/home/public/es_es/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
                           src={britishAirways}
@@ -168,7 +176,9 @@ export const Alliances = () => {
                       <a
                         href="https://www.31track.com/"
                         style={{ display: "flex", alignItems: "center" }}
+                        target="_blank"
                         className="image_link"
+                        rel="noreferrer"
                       >
                         <Image
                           src={track}

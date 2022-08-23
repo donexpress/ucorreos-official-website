@@ -46,7 +46,7 @@ export const Header = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="main-menu d-none d-lg-block" style={{height: '80px'}}>
+                                    <div className="main-menu d-none d-lg-block" style={{height: '80px', position: 'absolute', left: '135px'}}>
                                         <nav>
                                             <ul id="navigation">
                                                 <li>
