@@ -79,7 +79,7 @@ export const Alliances = () => {
                         />
                       </a>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", marginTop: "57px" }}>
+                    <div style={{ display: "flex", alignItems: "center"}}>
                       <a
                         style={{ display: "flex" }}
                         href="https://www.linio.com.co/"

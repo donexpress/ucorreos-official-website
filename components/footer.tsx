@@ -45,7 +45,7 @@ export const Footer = () => {
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
                       <h4>{t('links')}</h4>
-                      <ul>
+                      <ul style={{paddingLeft: '0px'}}>
                         <li><a href="#services">{t('services')}</a></li>
                         <li><a href="#aliance">{t('aliance')}</a></li>
                         <li><a href="#technologies">{t('technologies')}</a></li>

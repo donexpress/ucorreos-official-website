@@ -444,6 +444,11 @@ a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  #home > div > div > div > div > div.header-left.d-flex.align-items-center > div.main-menu.d-none.d-lg-block {
+    position: absolute;
+    top: 0;
+    left: 200px;
+  }
   .tailor_gradient {
     height: 768px;
   }
@@ -489,6 +494,10 @@ a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .header-area .menu-wrapper .logo2 {
+    position: relative !important;
+    left: -133px !important;
+  }
   .visit-tailor-area .tailor-details .sinlge-wrapper .single-details h3 {
     font-size: 20px;
   }

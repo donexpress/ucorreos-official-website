@@ -3,8 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag"
 import i18n from "./i18n";
-import { changeLanguage } from "i18next";
-
+import logo from '../public/img/logo/logo_image.png'
 export const Header = () => {
     const [code, setCode] = useState<string>("");
     const [selectedLanguague, setSelectedLanguague] = useState<string>("ES")
@@ -28,7 +27,7 @@ export const Header = () => {
     return (
         <header>
             <div id="home" className="header-area">
-                <div className="main-header header-sticky">
+                <div className="main-header header-sticky" style={{width: '100%'}}>
                     <div className="container-fluid">
                         <div className="row">
                             <div className="menu-wrapper align-items-center justify-content-between">
@@ -36,14 +35,14 @@ export const Header = () => {
                                     <div className="logo">
                                         <div className="logo_gradient">
                                             <a href="index.html">
-                                                <Image src="/img/logo/logo_image.png" width="100px" height="23.02px" alt="" />
+                                                <Image src={logo} width="100px" height="23.02px" alt="" />
                                             </a>
                                         </div>
                                     </div>
                                     <div className="logo2">
                                         <div className="logo_gradient">
                                             <a href="index.html">
-                                                <Image src="/img/logo/logo_image.png" width="100px" height="23.02px" alt="" />
+                                                <Image src={logo} width="100px" height="23.02px" alt="" />
                                             </a>
                                         </div>
                                     </div>
