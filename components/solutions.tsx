@@ -32,7 +32,7 @@ export const Solutions = () => {
               </div>
               <div className="single-offers d-flex mb-20" style={{ boxShadow: "4px 4px 8px 0 #d9d9d9, 0 6px 20px 0 #d9d9d9" }}>
                 <div className="icon" style={{ width: '130px', height: '100px', marginLeft: '20px' }}>
-                  <Image layout="fixed" width="130px" height="100px" src={serviceLevel} alt="this icon" className="icon-border" />
+                  <Image layout="fixed" width="130px" height="100px" src='/img/elements/serviceLevel.png' alt="this icon" className="icon-border" />
                 </div>
                 <div className="offers-cap">
                   <h3><a href="#">{t('service_levels')}</a></h3>
