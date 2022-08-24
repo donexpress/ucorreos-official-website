@@ -5,8 +5,9 @@ const nextConfig = {
   images: {
     domains: [
       'staging.3w.ucorreos.com',
-      '3w.ucorreos.com'
-    ]
+      '3w.ucorreos.com',
+      'staging.3w.ucorreos.com/*'
+    ],
   }
 }
 
