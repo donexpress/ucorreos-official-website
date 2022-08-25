@@ -44,7 +44,7 @@ export const translation = {
     cutting_edge_technology_subtitle: 'Siempre conectados',
     cutting_edge_technology_description_1: 'Contamos con la última tecnología en sistemas de seguimiento de paquetería y procesamiento de información para crear la mejor experiencia para nuestros clientes.',
     cutting_edge_technology_description_2: 'Pregunte a cualquier persona que envíe o reciba un paquete qué es importante y escuchará la confiabilidad. Por eso, creamos una tecnología de seguimiento que le permite ver, resolver y cumplir con las expectativas, localmente, globalmente, por paquete y envío.',
-    business_intelligence: 'Business Intelligence',
+    business_intelligence: 'Inteligencia de Negocios',
     business_intelligence_subtitle: 'Siempre un paso adelante',
     business_intelligence_description_1: 'La solución de seguimiento adecuada',
     business_intelligence_description_2: 'Ya sea personalizar 10 atuendos para un artista local o equipar el gimnasio con una gran máquina de entrenamiento, todo depende de su capacidad para entregar y rastrear su paquete. Pero la información de estado requerida para procesar las dos confirmaciones es bastante diferente. Es por eso que hemos desarrollado una variedad de herramientas de seguimiento que le brindan exactamente la información que necesita, cuándo y dónde la necesita. Así que puedes saltarte esos disfraces e ir al teatro antes del nuevo ensayo. O estimar la entrega de equipos de fitness.',
