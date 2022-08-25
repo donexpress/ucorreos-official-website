@@ -1,6 +1,8 @@
 import Image from "next/image"
-
+import { useTranslation } from "react-i18next";
+import logo from '../public/img/logo/logo_image.png'
 export const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer>
         <div className="footer-wrapper">
@@ -13,7 +15,7 @@ export const Footer = () => {
                       <div className="footer-logo mb-35">
                         <a href="index.html"
                         ><Image
-                            src="/img/logo/logo_image.png"
+                            src={logo}
                             width="93px"
                             height="21.39px"
                             alt=""
@@ -30,8 +32,7 @@ export const Footer = () => {
                           className="footer-pera col-xl-9 col-lg-9 col-md-9 col-sm-9"
                         >
                           <p>
-                            Humboldt 56, Colonia Centro, Cuauhtemoc, CP: 06000,
-                            Ciudad de México
+                          {t('address_text')}
                         </p>
                         </div>
                       </div>
@@ -43,12 +44,12 @@ export const Footer = () => {
                 >
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>Enlaces</h4>
-                      <ul>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#aliance">Alianzas</a></li>
-                        <li><a href="#technologies">Tecnologías</a></li>
-                        <li><a href="#quote">Cotizador</a></li>
+                      <h4>{t('links')}</h4>
+                      <ul style={{paddingLeft: '0px'}}>
+                        <li><a href="#services">{t('services')}</a></li>
+                        <li><a href="#aliance">{t('aliance')}</a></li>
+                        <li><a href="#technologies">{t('technologies')}</a></li>
+                        <li><a href="#quote">{t('quoter')}</a></li>
                       </ul>
                     </div>
                   </div>
@@ -62,7 +63,7 @@ export const Footer = () => {
                 <div className="row d-flex align-items-center">
                   <div className="col-xl-12">
                     <div className="footer-copy-right text-center text-white">
-                      Copyright &copy; {new Date().getFullYear()} Todos los derechos reservados
+                      Copyright &copy; {new Date().getFullYear()} {t('all_rights_reserved')}
                   </div>
                   </div>
                 </div>
