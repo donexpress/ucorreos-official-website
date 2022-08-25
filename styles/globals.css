@@ -435,7 +435,7 @@ a {
   }
 
   .slider-area .hero-caption-left {
-    height: 393px;
+    height: fit-content;
   }
 
   .laguage_container {
