@@ -422,7 +422,7 @@ a {
   }
 
   .header-right1 {
-    bottom: -7px;
+    bottom: 17px;
   }
 
   .tracking_container input[type="text"] {
@@ -445,6 +445,8 @@ a {
 
   .header-right1 {
     margin-right: -108px;
+    width: 270px;
+    justify-content: space-around;
   }
 }
 
