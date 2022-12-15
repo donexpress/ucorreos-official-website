@@ -23,9 +23,9 @@ export const Header = () => {
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
         if (lang === 'en') {
-            setSelectedLanguague('US')
+            setSelectedLanguague('US');
         } else {
-            setSelectedLanguague(lang.toUpperCase())
+            setSelectedLanguague(lang.toUpperCase());
         }
     }
     useEffect(() => {
