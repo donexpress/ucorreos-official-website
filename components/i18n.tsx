@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next"
 import { translation as English} from "../helper/i18n/en";
 import { translation as Spanish } from "../helper/i18n/es";
+import { translation as Chinesse } from "../helper/i18n/cn";
 const resources = {
     en: {
         translation: English
@@ -9,6 +10,9 @@ const resources = {
     es: {
         translation: Spanish
     },
+    cn: {
+        translation: Chinesse
+    }
 };
 i18n
     .use(initReactI18next) // passes i18n down to react-i18next
