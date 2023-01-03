@@ -29,7 +29,7 @@ export const translation = {
     warehouse_service_description: 'uCorreos海外仓，具有战略性的仓库位置以及为您提供绝佳的配套服务。',
     find_inner_peace: '因为专业，所以放心',
     click_for_reference: '点击参考',
-    find_inner_peace_description: '不管是城市或乡村，uCorreso科技研发部门独立开发的包裹跟踪解决方案，将显示包裹在洲际到城际间的每一条轨迹。',
+    find_inner_peace_description: '不管是城市或乡村，uCorreos科技研发部门独立开发的包裹跟踪解决方案，将显示包裹在洲际到城际间的每一条轨迹。',
     we_go: '我们将包裹投递至任何您想到达的目的地。',
     we_go_description: '我们为大型跨境电子商务，集运和国际运输提供专业的解决方案。',
     keep_business: '始终保持业务的平稳进行。',
