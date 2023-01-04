@@ -398,6 +398,11 @@ a {
 
   .slider-area .hero-caption-right h2 {
     width: 186px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   .slider-area .hero-caption-right {

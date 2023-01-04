@@ -22,7 +22,11 @@ export const Header = () => {
     }
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
-        setSelectedLanguague(lang === 'es' ? 'ES' : 'US')
+        if (lang === 'en') {
+            setSelectedLanguague('US');
+        } else {
+            setSelectedLanguague(lang.toUpperCase());
+        }
     }
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -134,6 +138,20 @@ export const Header = () => {
                                                     onClick={() => changeLanguage('es')}
                                                 />
                                                 <span className="language_text">Español</span>
+                                            </div>
+                                            <div className="cursor_pointer" onClick={() => changeLanguage('cn')}>
+                                                <ReactCountryFlag
+                                                    className="country_flag"
+                                                    countryCode="CN"
+                                                    svg
+                                                    style={{
+                                                        width: '2em',
+                                                        height: '2em',
+                                                    }}
+                                                    title="CN"
+                                                    onClick={() => changeLanguage('cn')}
+                                                />
+                                                <span className="language_text">中国人</span>
                                             </div>
                                         </div>
                                     </div>
