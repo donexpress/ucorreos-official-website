@@ -356,6 +356,7 @@ a {
 
   .visit-tailor-area .tailor-details h2 {
     margin-top: 20px;
+    min-height: 140px;
   }
 
   .visit-tailor-area .tailor-details .sinlge-wrapper .single-details {
