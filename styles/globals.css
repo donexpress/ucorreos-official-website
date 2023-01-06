@@ -356,6 +356,7 @@ a {
 
   .visit-tailor-area .tailor-details h2 {
     margin-top: 20px;
+    min-height: 140px;
   }
 
   .visit-tailor-area .tailor-details .sinlge-wrapper .single-details {
@@ -373,7 +374,6 @@ a {
 
   .header-area .main-header {
     height: 80px;
-    min-height: 140px;
   }
 
   .mobile_menu .slicknav_menu .slicknav_btn {
