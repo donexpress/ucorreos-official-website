@@ -373,6 +373,7 @@ a {
 
   .header-area .main-header {
     height: 80px;
+    min-height: 140px;
   }
 
   .mobile_menu .slicknav_menu .slicknav_btn {
