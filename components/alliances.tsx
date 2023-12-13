@@ -174,7 +174,7 @@ export const Alliances = () => {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginTop: "50px" }}>
                       <a
-                        href="https://www.31track.com/"
+                        href="https://track.a2a56.com/"
                         style={{ display: "flex", alignItems: "center" }}
                         target="_blank"
                         className="image_link"

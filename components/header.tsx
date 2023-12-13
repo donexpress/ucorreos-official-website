@@ -10,7 +10,7 @@ export const Header = () => {
     const { t } = useTranslation();
     const search = () => {
         if (code) {
-            const url = `https://www.31track.com/results?tn[]=${code}`;
+            const url = `https://track.a2a56.com/results?tn[]=${code}`;
             if (window) {
                 // @ts-ignore
                 window.open(url, "_blank").focus();

@@ -83,7 +83,7 @@ export const Sliders = () => {
                 <div className="hero-caption-left ucorreo_gradient">
                   <h1 data-animation="bounceIn" data-delay=".4s">{t('find_inner_peace')}</h1>
                   <div className="hero__btn" data-animation="fadeInUp" data-delay=".7s">
-                    <a href="https://www.31track.com/" target="_blank" rel="noreferrer" className="border-btn hero-btn">
+                    <a href="https://track.a2a56.com/" target="_blank" rel="noreferrer" className="border-btn hero-btn">
                       {t('click_for_reference')}
                     </a>
                   </div>
